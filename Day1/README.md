@@ -15,4 +15,5 @@ ansible -i hosts ping.yml
 ### You may also test the inventory file kept at Ansible Recommended Directory Structure
 
 cd AnsibleRecommendedDirStructure
+
 ansible -i hosts all -m ping
