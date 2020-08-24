@@ -1,0 +1,35 @@
+Playbook structure
+  - Playbook is a YAML file
+  - each playbook may contain one or more Play
+  - each Play target atleast one machine
+  - each Play has one or more tasks
+  - each task can invoke at the most only one Ansible module
+  - every Playbook is a YAML file but not all YAML make a Playbook
+
+YAML
+  - Yet Another Markup Language
+  - superset of JSON (JavaScript Object Notation)
+  - can be be a json file
+
+
+JSON
+
+employee {
+  "firstName" : "Sharma"
+  "lastName"  : "Gupta",
+  "empId"     : 1234,
+  "address"   : {
+      "doorNo": 123
+      "street": "Some street"
+   }	
+}
+
+YAML
+
+employee
+    firstName: Sharma
+    lastName : Gupta
+    empId    : 1234
+    address  :
+        doorNo : 123
+        street : "Some street"

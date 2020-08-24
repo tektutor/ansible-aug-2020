@@ -1,0 +1,20 @@
+ansible -i hosts all -m ping
+
+1. Ansible picks the connections details from inventory file and does ssh on both
+   ubuntu1 and ubuntu2 parallely.
+
+2. Ansible creates a local temp directory in Ansible Controller Machine(ACM) and it creates
+   a remote temp director at ~/.tmp
+
+3. Ansible converts the ansible module ping.py into a plain python script in the local temp 
+   folder.
+
+4. Using sftp/scp tool, Ansible copies the transpiled ping.py script from local temp to
+   remote temp on the Ansible node. It does this operation paralled on ubuntu1 and ubuntu2.
+
+5. Ansible executes the ping.py on ubuntu1 and ubuntu2 using python available on the respective
+   remote nodes.
+
+6. Ansible grabs the output from the remote machines and cleans up the temp folder on the remote machines.
+
+7. Finally Ansible gives a summary of responses in the Ansible Controller Machine(ACM).

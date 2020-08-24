@@ -1,0 +1,14 @@
+- name: This play will ping the ansible nodes
+  hosts: ubuntu1 
+  tasks:
+    - name: Ping ansible node
+      ping:
+
+    - name: Print some debug messages
+      debug: msg="Some debug message."
+
+- name: This is the second play 
+  hosts: all
+  tasks:
+    - name: Print some debug messages
+      debug: msg="Some debug message."
