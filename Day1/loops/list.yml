@@ -1,0 +1,13 @@
+- name: This playbook demonstrates use of list variable 
+  hosts: localhost
+  vars:
+    software_tools:
+      - vim
+      - git
+      - tree
+      - default-jdk
+      - maven
+  tasks:
+    - debug: var=item
+      with_list: "{{software_tools}}"
+  

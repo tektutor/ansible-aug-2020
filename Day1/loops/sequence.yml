@@ -1,0 +1,6 @@
+- name: This playbook demonstrates use of sequence loop
+  hosts: localhost
+  tasks:
+    - name: Print 1 to 15
+      debug: var=item
+      with_sequence: start=1  end=15 format="%03d"

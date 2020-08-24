@@ -1,11 +1,15 @@
 - name: This play will ping the ansible nodes
   hosts: ubuntu1 
+  gather_facts: yes 
   tasks:
     - name: Ping ansible node
       ping:
 
-    - name: Print some debug messages
-      debug: msg="Some debug message."
+    - name: Print hostname 
+      shell: hostname
+      register: my_output
+
+    - debug: msg="{{my_output.stdout}}"
 
 - name: This is the second play 
   hosts: all

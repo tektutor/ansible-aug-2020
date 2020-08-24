@@ -1,0 +1,5 @@
+- hosts: ubuntu1 
+  tasks:
+    -  ping:
+    -  debug: msg="Some debug message."
+
