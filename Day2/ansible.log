@@ -1,0 +1,92 @@
+2020-08-24 21:31:15,206 p=95340 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 21:31:15,219 p=95340 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 21:31:16,397 p=95340 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:31:16,402 p=95340 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:31:16,415 p=95340 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 21:31:22,213 p=95340 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:31:22,356 p=95340 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:31:22,369 p=95340 u=root n=ansible | TASK [Start nginx service in Ubunut ansible node] *****************************************************************
+2020-08-24 21:31:22,995 p=95340 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 21:31:22,996 p=95340 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:31:22,997 p=95340 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:31:23,000 p=95340 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 21:31:23,000 p=95340 u=root n=ansible | ubuntu1                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:31:23,000 p=95340 u=root n=ansible | ubuntu2                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:43:25,906 p=96346 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 21:43:25,915 p=96346 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 21:43:27,157 p=96346 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:43:27,164 p=96346 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:43:27,177 p=96346 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 21:43:32,831 p=96346 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:43:32,932 p=96346 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:43:32,940 p=96346 u=root n=ansible | TASK [Create the custom web root folder in Ubuntu ansible node] ***************************************************
+2020-08-24 21:43:33,509 p=96346 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:43:33,514 p=96346 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:43:33,528 p=96346 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 21:43:34,664 p=96346 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:43:34,670 p=96346 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:43:34,681 p=96346 u=root n=ansible | TASK [Restart nginx service in Ubuntu ansible node] ***************************************************************
+2020-08-24 21:43:36,419 p=96346 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 21:43:36,419 p=96346 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:43:36,420 p=96346 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:43:36,423 p=96346 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 21:43:36,424 p=96346 u=root n=ansible | ubuntu1                    : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:43:36,424 p=96346 u=root n=ansible | ubuntu2                    : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:51:40,008 p=97379 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 21:51:40,020 p=97379 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 21:51:41,282 p=97379 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:51:41,291 p=97379 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:51:41,301 p=97379 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 21:51:47,335 p=97379 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:51:47,379 p=97379 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:51:47,391 p=97379 u=root n=ansible | TASK [Create the custom web root folder in Ubuntu ansible node] ***************************************************
+2020-08-24 21:51:48,054 p=97379 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:51:48,056 p=97379 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:51:48,067 p=97379 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 21:51:48,926 p=97379 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:51:48,941 p=97379 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:51:48,961 p=97379 u=root n=ansible | TASK [Restart nginx service in Ubuntu ansible node] ***************************************************************
+2020-08-24 21:51:50,665 p=97379 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 21:51:50,666 p=97379 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:51:50,667 p=97379 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:51:50,689 p=97379 u=root n=ansible | TASK [Deploy custom web page into nginx web server in Ubuntu ansible node] ****************************************
+2020-08-24 21:51:50,793 p=97379 u=root n=ansible | fatal: [ubuntu1]: FAILED! => {"changed": false, "msg": "Could not find or access 'index.html.j2'\nSearched in:\n\t/root/Ansible/Day2/templates/index.html.j2\n\t/root/Ansible/Day2/index.html.j2\n\t/root/Ansible/Day2/templates/index.html.j2\n\t/root/Ansible/Day2/index.html.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2020-08-24 21:51:50,808 p=97379 u=root n=ansible | fatal: [ubuntu2]: FAILED! => {"changed": false, "msg": "Could not find or access 'index.html.j2'\nSearched in:\n\t/root/Ansible/Day2/templates/index.html.j2\n\t/root/Ansible/Day2/index.html.j2\n\t/root/Ansible/Day2/templates/index.html.j2\n\t/root/Ansible/Day2/index.html.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2020-08-24 21:51:50,810 p=97379 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 21:51:50,810 p=97379 u=root n=ansible | ubuntu1                    : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:51:50,810 p=97379 u=root n=ansible | ubuntu2                    : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:54:53,568 p=98305 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 21:54:53,579 p=98305 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 21:54:54,837 p=98305 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:54:54,839 p=98305 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:54:54,850 p=98305 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 21:55:01,141 p=98305 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:55:01,175 p=98305 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:55:01,186 p=98305 u=root n=ansible | TASK [Create the custom web root folder in Ubuntu ansible node] ***************************************************
+2020-08-24 21:55:01,784 p=98305 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:55:01,795 p=98305 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:55:01,810 p=98305 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 21:55:02,742 p=98305 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:55:02,752 p=98305 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:55:02,765 p=98305 u=root n=ansible | TASK [Restart nginx service in Ubuntu ansible node] ***************************************************************
+2020-08-24 21:55:04,433 p=98305 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 21:55:04,434 p=98305 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:55:04,440 p=98305 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:55:04,452 p=98305 u=root n=ansible | TASK [Deploy custom web page into nginx web server in Ubuntu ansible node] ****************************************
+2020-08-24 21:55:05,433 p=98305 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:55:05,433 p=98305 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:55:05,436 p=98305 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 21:55:05,436 p=98305 u=root n=ansible | ubuntu1                    : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:55:05,436 p=98305 u=root n=ansible | ubuntu2                    : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
