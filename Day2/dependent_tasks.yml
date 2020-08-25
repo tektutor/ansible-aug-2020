@@ -1,0 +1,17 @@
+- name: This playbook demonstrates how to create dependency
+  hosts: localhost
+  tasks:
+     - name: Task 1
+       shell: /bin/false
+       register: output
+       ignore_errors: True
+
+     - debug: var=output
+
+     - name: Task 2 - When Task1 succeeded
+       when: output.failed == false
+       debug: msg="Task 1 succeeded." 
+
+     - name: Task 3 - When Task1 failed
+       when: output.failed == true
+       debug: msg="Task 1 failed." 

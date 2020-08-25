@@ -4190,3 +4190,184 @@ ansible.cfg to get rid of this message.
 2020-08-24 23:51:15,336 p=113302 u=root n=ansible | centos2                    : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2020-08-24 23:51:15,336 p=113302 u=root n=ansible | ubuntu1                    : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2020-08-24 23:51:15,336 p=113302 u=root n=ansible | ubuntu2                    : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:20:07,975 p=17226 u=root n=ansible | ERROR! the playbook: provision-docker-ansible-nodes.yml could not be found
+2020-08-25 02:20:17,586 p=17235 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-25 02:20:17,599 p=17235 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-25 02:20:17,699 p=17235 u=root n=ansible | fatal: [centos1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the RSA key sent by the remote host is\nSHA256:048r7q3kDcRGjXM2JMixWuQp1b9UieYqS3NovNhb40Q.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending RSA key in /root/.ssh/known_hosts:5\r\nRSA host key for [localhost]:2003 has changed and you have requested strict checking.\r\nHost key verification failed.", "unreachable": true}
+2020-08-25 02:20:17,704 p=17235 u=root n=ansible | fatal: [centos2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the RSA key sent by the remote host is\nSHA256:048r7q3kDcRGjXM2JMixWuQp1b9UieYqS3NovNhb40Q.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending RSA key in /root/.ssh/known_hosts:6\r\nRSA host key for [localhost]:2004 has changed and you have requested strict checking.\r\nHost key verification failed.", "unreachable": true}
+2020-08-25 02:20:18,920 p=17235 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:20:18,924 p=17235 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:20:18,935 p=17235 u=root n=ansible | TASK [include] ****************************************************************************************************
+2020-08-25 02:20:19,166 p=17235 u=root n=ansible | included: /root/Ansible/Day2/after-refactoring/install-nginx-ubuntu.yml for ubuntu1, ubuntu2
+2020-08-25 02:20:19,179 p=17235 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-25 02:20:38,247 p=17235 u=root n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2020-08-25 02:20:38,247 p=17235 u=root n=ansible | changed: [ubuntu1]
+2020-08-25 02:20:38,265 p=17235 u=root n=ansible | changed: [ubuntu2]
+2020-08-25 02:20:38,273 p=17235 u=root n=ansible | TASK [include] ****************************************************************************************************
+2020-08-25 02:20:38,376 p=17235 u=root n=ansible | included: /root/Ansible/Day2/after-refactoring/configure-nginx-ubuntu.yml for ubuntu1, ubuntu2
+2020-08-25 02:20:38,393 p=17235 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-25 02:20:39,399 p=17235 u=root n=ansible | changed: [ubuntu1]
+2020-08-25 02:20:39,402 p=17235 u=root n=ansible | changed: [ubuntu2]
+2020-08-25 02:20:39,410 p=17235 u=root n=ansible | TASK [Create the custom web root folder in ansible node] **********************************************************
+2020-08-25 02:20:39,951 p=17235 u=root n=ansible | changed: [ubuntu2]
+2020-08-25 02:20:39,961 p=17235 u=root n=ansible | changed: [ubuntu1]
+2020-08-25 02:20:39,970 p=17235 u=root n=ansible | TASK [Restart nginx service in ansible node] **********************************************************************
+2020-08-25 02:20:41,546 p=17235 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-25 02:20:41,547 p=17235 u=root n=ansible | changed: [ubuntu1]
+2020-08-25 02:20:41,550 p=17235 u=root n=ansible | changed: [ubuntu2]
+2020-08-25 02:20:41,561 p=17235 u=root n=ansible | TASK [Extract IP address of ansible node] *************************************************************************
+2020-08-25 02:20:41,973 p=17235 u=root n=ansible | changed: [ubuntu1]
+2020-08-25 02:20:41,984 p=17235 u=root n=ansible | changed: [ubuntu2]
+2020-08-25 02:20:41,999 p=17235 u=root n=ansible | TASK [Deploy custom web page into nginx web server in ansible node] ***********************************************
+2020-08-25 02:20:42,722 p=17235 u=root n=ansible | changed: [ubuntu1]
+2020-08-25 02:20:42,751 p=17235 u=root n=ansible | changed: [ubuntu2]
+2020-08-25 02:20:42,756 p=17235 u=root n=ansible | PLAY [Test if the nginx web are able to server our custom html pages] *********************************************
+2020-08-25 02:20:42,762 p=17235 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-25 02:20:44,109 p=17235 u=root n=ansible | ok: [localhost]
+2020-08-25 02:20:44,145 p=17235 u=root n=ansible | TASK [Access web page on ubuntu ansible nodes] ********************************************************************
+2020-08-25 02:20:44,493 p=17235 u=root n=ansible | [WARNING]: Consider using the get_url or uri module rather than running 'curl'.  If you need to use command
+because get_url or uri is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2020-08-25 02:20:44,494 p=17235 u=root n=ansible | failed: [localhost] (item=031) => {"ansible_loop_var": "item", "changed": true, "cmd": "curl http://localhost:8031", "delta": "0:00:00.017779", "end": "2020-08-25 02:20:44.458272", "item": "031", "msg": "non-zero return code", "rc": 7, "start": "2020-08-25 02:20:44.440493", "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed connect to localhost:8031; Connection refused", "stderr_lines": ["  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current", "                                 Dload  Upload   Total   Spent    Left  Speed", "", "  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed connect to localhost:8031; Connection refused"], "stdout": "", "stdout_lines": []}
+2020-08-25 02:20:44,740 p=17235 u=root n=ansible | failed: [localhost] (item=032) => {"ansible_loop_var": "item", "changed": true, "cmd": "curl http://localhost:8032", "delta": "0:00:00.014686", "end": "2020-08-25 02:20:44.712783", "item": "032", "msg": "non-zero return code", "rc": 7, "start": "2020-08-25 02:20:44.698097", "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed connect to localhost:8032; Connection refused", "stderr_lines": ["  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current", "                                 Dload  Upload   Total   Spent    Left  Speed", "", "  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed connect to localhost:8032; Connection refused"], "stdout": "", "stdout_lines": []}
+2020-08-25 02:20:44,742 p=17235 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-25 02:20:44,742 p=17235 u=root n=ansible | centos1                    : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:20:44,742 p=17235 u=root n=ansible | centos2                    : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:20:44,743 p=17235 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:20:44,743 p=17235 u=root n=ansible | ubuntu1                    : ok=9    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:20:44,743 p=17235 u=root n=ansible | ubuntu2                    : ok=9    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:24:03,837 p=19774 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-25 02:24:03,849 p=19774 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-25 02:24:05,518 p=19774 u=root n=ansible | ok: [centos1]
+2020-08-25 02:24:05,524 p=19774 u=root n=ansible | ok: [centos2]
+2020-08-25 02:24:05,528 p=19774 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:24:05,537 p=19774 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:24:05,553 p=19774 u=root n=ansible | TASK [include] ****************************************************************************************************
+2020-08-25 02:24:05,848 p=19774 u=root n=ansible | included: /root/Ansible/Day2/after-refactoring/install-nginx-ubuntu.yml for ubuntu1, ubuntu2, centos1, centos2
+2020-08-25 02:24:05,870 p=19774 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-25 02:24:12,631 p=19774 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:24:12,643 p=19774 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:24:25,533 p=19774 u=root n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2020-08-25 02:24:25,533 p=19774 u=root n=ansible | changed: [centos2]
+2020-08-25 02:24:26,291 p=19774 u=root n=ansible | changed: [centos1]
+2020-08-25 02:24:26,303 p=19774 u=root n=ansible | TASK [include] ****************************************************************************************************
+2020-08-25 02:24:26,499 p=19774 u=root n=ansible | included: /root/Ansible/Day2/after-refactoring/configure-nginx-ubuntu.yml for ubuntu1, ubuntu2, centos1, centos2
+2020-08-25 02:24:26,524 p=19774 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-25 02:24:27,868 p=19774 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:24:27,878 p=19774 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:24:27,990 p=19774 u=root n=ansible | changed: [centos1]
+2020-08-25 02:24:28,008 p=19774 u=root n=ansible | changed: [centos2]
+2020-08-25 02:24:28,027 p=19774 u=root n=ansible | TASK [Create the custom web root folder in ansible node] **********************************************************
+2020-08-25 02:24:28,539 p=19774 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:24:28,557 p=19774 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:24:28,558 p=19774 u=root n=ansible | changed: [centos1]
+2020-08-25 02:24:28,618 p=19774 u=root n=ansible | changed: [centos2]
+2020-08-25 02:24:28,635 p=19774 u=root n=ansible | TASK [Restart nginx service in ansible node] **********************************************************************
+2020-08-25 02:24:30,461 p=19774 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-25 02:24:30,461 p=19774 u=root n=ansible | changed: [centos2]
+2020-08-25 02:24:30,477 p=19774 u=root n=ansible | changed: [ubuntu2]
+2020-08-25 02:24:30,479 p=19774 u=root n=ansible | changed: [centos1]
+2020-08-25 02:24:30,485 p=19774 u=root n=ansible | changed: [ubuntu1]
+2020-08-25 02:24:30,506 p=19774 u=root n=ansible | TASK [Extract IP address of ansible node] *************************************************************************
+2020-08-25 02:24:31,040 p=19774 u=root n=ansible | changed: [ubuntu2]
+2020-08-25 02:24:31,043 p=19774 u=root n=ansible | changed: [ubuntu1]
+2020-08-25 02:24:31,088 p=19774 u=root n=ansible | changed: [centos2]
+2020-08-25 02:24:31,092 p=19774 u=root n=ansible | changed: [centos1]
+2020-08-25 02:24:31,115 p=19774 u=root n=ansible | TASK [Deploy custom web page into nginx web server in ansible node] ***********************************************
+2020-08-25 02:24:32,052 p=19774 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:24:32,071 p=19774 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:24:32,154 p=19774 u=root n=ansible | changed: [centos1]
+2020-08-25 02:24:32,210 p=19774 u=root n=ansible | changed: [centos2]
+2020-08-25 02:24:32,219 p=19774 u=root n=ansible | PLAY [Test if the nginx web are able to server our custom html pages] *********************************************
+2020-08-25 02:24:32,224 p=19774 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-25 02:24:33,542 p=19774 u=root n=ansible | ok: [localhost]
+2020-08-25 02:24:33,593 p=19774 u=root n=ansible | TASK [Access web page on ubuntu ansible nodes] ********************************************************************
+2020-08-25 02:24:33,903 p=19774 u=root n=ansible | [WARNING]: Consider using the get_url or uri module rather than running 'curl'.  If you need to use command
+because get_url or uri is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2020-08-25 02:24:33,903 p=19774 u=root n=ansible | failed: [localhost] (item=031) => {"ansible_loop_var": "item", "changed": true, "cmd": "curl http://localhost:8031", "delta": "0:00:00.016174", "end": "2020-08-25 02:24:33.867168", "item": "031", "msg": "non-zero return code", "rc": 7, "start": "2020-08-25 02:24:33.850994", "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed connect to localhost:8031; Connection refused", "stderr_lines": ["  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current", "                                 Dload  Upload   Total   Spent    Left  Speed", "", "  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed connect to localhost:8031; Connection refused"], "stdout": "", "stdout_lines": []}
+2020-08-25 02:24:34,149 p=19774 u=root n=ansible | failed: [localhost] (item=032) => {"ansible_loop_var": "item", "changed": true, "cmd": "curl http://localhost:8032", "delta": "0:00:00.015542", "end": "2020-08-25 02:24:34.111122", "item": "032", "msg": "non-zero return code", "rc": 7, "start": "2020-08-25 02:24:34.095580", "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed connect to localhost:8032; Connection refused", "stderr_lines": ["  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current", "                                 Dload  Upload   Total   Spent    Left  Speed", "", "  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed connect to localhost:8032; Connection refused"], "stdout": "", "stdout_lines": []}
+2020-08-25 02:24:34,153 p=19774 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-25 02:24:34,153 p=19774 u=root n=ansible | centos1                    : ok=9    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:24:34,154 p=19774 u=root n=ansible | centos2                    : ok=9    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:24:34,154 p=19774 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:24:34,154 p=19774 u=root n=ansible | ubuntu1                    : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:24:34,154 p=19774 u=root n=ansible | ubuntu2                    : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:25:26,496 p=23180 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-25 02:25:26,509 p=23180 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-25 02:25:27,836 p=23180 u=root n=ansible | ok: [centos2]
+2020-08-25 02:25:27,860 p=23180 u=root n=ansible |  [ERROR]: User interrupted execution
+
+2020-08-25 02:26:10,346 p=23399 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-25 02:26:10,358 p=23399 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-25 02:26:11,657 p=23399 u=root n=ansible | ok: [centos2]
+2020-08-25 02:26:11,685 p=23399 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:26:11,688 p=23399 u=root n=ansible | ok: [centos1]
+2020-08-25 02:26:11,713 p=23399 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:26:11,735 p=23399 u=root n=ansible | TASK [include] ****************************************************************************************************
+2020-08-25 02:26:12,024 p=23399 u=root n=ansible | included: /root/Ansible/Day2/after-refactoring/install-nginx-ubuntu.yml for ubuntu1, ubuntu2, centos1, centos2
+2020-08-25 02:26:12,041 p=23399 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-25 02:26:18,941 p=23399 u=root n=ansible | ok: [centos1]
+2020-08-25 02:26:18,947 p=23399 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:26:18,950 p=23399 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:26:19,031 p=23399 u=root n=ansible | ok: [centos2]
+2020-08-25 02:26:19,044 p=23399 u=root n=ansible | TASK [include] ****************************************************************************************************
+2020-08-25 02:26:19,228 p=23399 u=root n=ansible | included: /root/Ansible/Day2/after-refactoring/configure-nginx-ubuntu.yml for ubuntu1, ubuntu2, centos1, centos2
+2020-08-25 02:26:19,257 p=23399 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-25 02:26:20,636 p=23399 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:26:20,641 p=23399 u=root n=ansible | ok: [centos2]
+2020-08-25 02:26:20,653 p=23399 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:26:20,660 p=23399 u=root n=ansible | ok: [centos1]
+2020-08-25 02:26:20,676 p=23399 u=root n=ansible | TASK [Create the custom web root folder in ansible node] **********************************************************
+2020-08-25 02:26:21,170 p=23399 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:26:21,173 p=23399 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:26:21,230 p=23399 u=root n=ansible | ok: [centos2]
+2020-08-25 02:26:21,239 p=23399 u=root n=ansible | ok: [centos1]
+2020-08-25 02:26:21,253 p=23399 u=root n=ansible | TASK [Restart nginx service in ansible node] **********************************************************************
+2020-08-25 02:26:23,005 p=23399 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-25 02:26:23,006 p=23399 u=root n=ansible | changed: [centos1]
+2020-08-25 02:26:23,014 p=23399 u=root n=ansible | changed: [ubuntu2]
+2020-08-25 02:26:23,020 p=23399 u=root n=ansible | changed: [centos2]
+2020-08-25 02:26:23,040 p=23399 u=root n=ansible | changed: [ubuntu1]
+2020-08-25 02:26:23,051 p=23399 u=root n=ansible | TASK [Extract IP address of ansible node] *************************************************************************
+2020-08-25 02:26:23,528 p=23399 u=root n=ansible | changed: [ubuntu1]
+2020-08-25 02:26:23,555 p=23399 u=root n=ansible | changed: [ubuntu2]
+2020-08-25 02:26:23,573 p=23399 u=root n=ansible | changed: [centos1]
+2020-08-25 02:26:23,615 p=23399 u=root n=ansible | changed: [centos2]
+2020-08-25 02:26:23,641 p=23399 u=root n=ansible | TASK [Deploy custom web page into nginx web server in ansible node] ***********************************************
+2020-08-25 02:26:24,608 p=23399 u=root n=ansible | ok: [ubuntu2]
+2020-08-25 02:26:24,616 p=23399 u=root n=ansible | ok: [ubuntu1]
+2020-08-25 02:26:24,630 p=23399 u=root n=ansible | ok: [centos1]
+2020-08-25 02:26:24,678 p=23399 u=root n=ansible | ok: [centos2]
+2020-08-25 02:26:24,682 p=23399 u=root n=ansible | PLAY [Test if the nginx web are able to server our custom html pages] *********************************************
+2020-08-25 02:26:24,688 p=23399 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-25 02:26:25,989 p=23399 u=root n=ansible | ok: [localhost]
+2020-08-25 02:26:26,024 p=23399 u=root n=ansible | TASK [Access web page on ubuntu ansible nodes] ********************************************************************
+2020-08-25 02:26:26,349 p=23399 u=root n=ansible | changed: [localhost] => (item=001)
+2020-08-25 02:26:26,593 p=23399 u=root n=ansible | changed: [localhost] => (item=002)
+2020-08-25 02:26:26,594 p=23399 u=root n=ansible | [WARNING]: Consider using the get_url or uri module rather than running 'curl'.  If you need to use command
+because get_url or uri is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2020-08-25 02:26:26,640 p=23399 u=root n=ansible | TASK [Access web page on centos ansible nodes] ********************************************************************
+2020-08-25 02:26:26,965 p=23399 u=root n=ansible | failed: [localhost] (item=001) => {"ansible_loop_var": "item", "changed": true, "cmd": "curl http://localhost:9001", "delta": "0:00:00.015842", "end": "2020-08-25 02:26:26.930593", "item": "001", "msg": "non-zero return code", "rc": 56, "start": "2020-08-25 02:26:26.914751", "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (56) Recv failure: Connection reset by peer", "stderr_lines": ["  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current", "                                 Dload  Upload   Total   Spent    Left  Speed", "", "  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0", "  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0", "curl: (56) Recv failure: Connection reset by peer"], "stdout": "", "stdout_lines": []}
+2020-08-25 02:26:27,203 p=23399 u=root n=ansible | failed: [localhost] (item=002) => {"ansible_loop_var": "item", "changed": true, "cmd": "curl http://localhost:9002", "delta": "0:00:00.014304", "end": "2020-08-25 02:26:27.173347", "item": "002", "msg": "non-zero return code", "rc": 56, "start": "2020-08-25 02:26:27.159043", "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (56) Recv failure: Connection reset by peer", "stderr_lines": ["  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current", "                                 Dload  Upload   Total   Spent    Left  Speed", "", "  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0", "  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0", "curl: (56) Recv failure: Connection reset by peer"], "stdout": "", "stdout_lines": []}
+2020-08-25 02:26:27,206 p=23399 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-25 02:26:27,206 p=23399 u=root n=ansible | centos1                    : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:26:27,207 p=23399 u=root n=ansible | centos2                    : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:26:27,207 p=23399 u=root n=ansible | localhost                  : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:26:27,207 p=23399 u=root n=ansible | ubuntu1                    : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-25 02:26:27,207 p=23399 u=root n=ansible | ubuntu2                    : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
