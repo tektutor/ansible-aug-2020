@@ -1,0 +1,9 @@
+- name: This play will install nginx web server, configure web root folder and deploy custom web page
+  hosts: all
+  tasks:
+   - name: Install nginx in the Ubuntu ansible node
+     apt: name=nginx state=latest update_cache=yes 
+
+   - name: Start nginx service in Ubunut ansible node
+    #service: name=nginx state=started
+     shell: service nginx start
