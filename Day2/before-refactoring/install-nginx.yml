@@ -1,0 +1,47 @@
+- name: This play will install nginx web server, configure web root folder and deploy custom web page
+  hosts: all
+  vars:
+    - greeting_msg: DevOps!
+    - provisioner_tool: Docker
+    - conf_mgr_tool: Ansible
+  tasks:
+   - name: Install nginx in the Ubuntu ansible node
+     when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
+     apt: name=nginx state=latest update_cache=yes 
+
+   - name: Fix the metalink issue in CentOS ansible node
+     when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
+     copy: src=epel.repo dest=/etc/yum.repos.d/epel.repo
+
+   - name: Install Extra Packages for Enterprise Linux (EPEL) in CentOS ansible node
+     when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
+     yum: 
+       name: epel-release 
+       state: latest
+   
+   - name: Install nginx in the CentOS ansible node
+     when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
+     yum: name=nginx state=latest 
+
+   - name: Create the custom web root folder in ansible node
+     file: path=/var/html state=directory mode=0777
+
+   - name: Configure nginx for custom web root folder in Ubuntu ansible node
+     when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
+     copy: src=default dest=/etc/nginx/sites-available/default backup=yes 
+
+   - name: Configure nginx for custom web root folder in CentOS ansible node
+     when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
+     copy: src=default.conf dest=/etc/nginx/conf.d/default.conf backup=yes 
+
+   - name: Restart nginx service in ansible node
+     shell: service nginx restart
+
+   - name: Extract IP address of ansible node
+     shell: hostname -i
+     register: output
+
+   - debug: var=output
+
+   - name: Deploy custom web page into nginx web server in ansible node
+     template: src=index.html.j2 dest=/var/html/index.html

@@ -1,0 +1,2 @@
+ - name: Configure nginx for custom web root folder in CentOS ansible node
+   copy: src=default.conf dest=/etc/nginx/conf.d/default.conf backup=yes 

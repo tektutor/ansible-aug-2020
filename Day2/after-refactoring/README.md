@@ -25,3 +25,10 @@ curl http://172.17.0.2
 ### Access web page from ubuntu ansible node
 
 curl http://172.17.0.3
+
+
+### Creating centos containers
+
+docker run -d --name centos1 --hostname centos1 -p 2003:22 -p 8003:80 tektutor/ansible-centos
+
+docker run -d --name centos2 --hostname centos2 -p 2004:22 -p 8004:80 tektutor/ansible-centos

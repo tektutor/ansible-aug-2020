@@ -1,0 +1,3689 @@
+2020-08-24 21:31:15,206 p=95340 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 21:31:15,219 p=95340 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 21:31:16,397 p=95340 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:31:16,402 p=95340 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:31:16,415 p=95340 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 21:31:22,213 p=95340 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:31:22,356 p=95340 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:31:22,369 p=95340 u=root n=ansible | TASK [Start nginx service in Ubunut ansible node] *****************************************************************
+2020-08-24 21:31:22,995 p=95340 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 21:31:22,996 p=95340 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:31:22,997 p=95340 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:31:23,000 p=95340 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 21:31:23,000 p=95340 u=root n=ansible | ubuntu1                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:31:23,000 p=95340 u=root n=ansible | ubuntu2                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:43:25,906 p=96346 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 21:43:25,915 p=96346 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 21:43:27,157 p=96346 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:43:27,164 p=96346 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:43:27,177 p=96346 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 21:43:32,831 p=96346 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:43:32,932 p=96346 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:43:32,940 p=96346 u=root n=ansible | TASK [Create the custom web root folder in Ubuntu ansible node] ***************************************************
+2020-08-24 21:43:33,509 p=96346 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:43:33,514 p=96346 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:43:33,528 p=96346 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 21:43:34,664 p=96346 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:43:34,670 p=96346 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:43:34,681 p=96346 u=root n=ansible | TASK [Restart nginx service in Ubuntu ansible node] ***************************************************************
+2020-08-24 21:43:36,419 p=96346 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 21:43:36,419 p=96346 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:43:36,420 p=96346 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:43:36,423 p=96346 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 21:43:36,424 p=96346 u=root n=ansible | ubuntu1                    : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:43:36,424 p=96346 u=root n=ansible | ubuntu2                    : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:51:40,008 p=97379 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 21:51:40,020 p=97379 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 21:51:41,282 p=97379 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:51:41,291 p=97379 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:51:41,301 p=97379 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 21:51:47,335 p=97379 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:51:47,379 p=97379 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:51:47,391 p=97379 u=root n=ansible | TASK [Create the custom web root folder in Ubuntu ansible node] ***************************************************
+2020-08-24 21:51:48,054 p=97379 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:51:48,056 p=97379 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:51:48,067 p=97379 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 21:51:48,926 p=97379 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:51:48,941 p=97379 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:51:48,961 p=97379 u=root n=ansible | TASK [Restart nginx service in Ubuntu ansible node] ***************************************************************
+2020-08-24 21:51:50,665 p=97379 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 21:51:50,666 p=97379 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:51:50,667 p=97379 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:51:50,689 p=97379 u=root n=ansible | TASK [Deploy custom web page into nginx web server in Ubuntu ansible node] ****************************************
+2020-08-24 21:51:50,793 p=97379 u=root n=ansible | fatal: [ubuntu1]: FAILED! => {"changed": false, "msg": "Could not find or access 'index.html.j2'\nSearched in:\n\t/root/Ansible/Day2/templates/index.html.j2\n\t/root/Ansible/Day2/index.html.j2\n\t/root/Ansible/Day2/templates/index.html.j2\n\t/root/Ansible/Day2/index.html.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2020-08-24 21:51:50,808 p=97379 u=root n=ansible | fatal: [ubuntu2]: FAILED! => {"changed": false, "msg": "Could not find or access 'index.html.j2'\nSearched in:\n\t/root/Ansible/Day2/templates/index.html.j2\n\t/root/Ansible/Day2/index.html.j2\n\t/root/Ansible/Day2/templates/index.html.j2\n\t/root/Ansible/Day2/index.html.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2020-08-24 21:51:50,810 p=97379 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 21:51:50,810 p=97379 u=root n=ansible | ubuntu1                    : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:51:50,810 p=97379 u=root n=ansible | ubuntu2                    : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:54:53,568 p=98305 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 21:54:53,579 p=98305 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 21:54:54,837 p=98305 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:54:54,839 p=98305 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:54:54,850 p=98305 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 21:55:01,141 p=98305 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:55:01,175 p=98305 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:55:01,186 p=98305 u=root n=ansible | TASK [Create the custom web root folder in Ubuntu ansible node] ***************************************************
+2020-08-24 21:55:01,784 p=98305 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:55:01,795 p=98305 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:55:01,810 p=98305 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 21:55:02,742 p=98305 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 21:55:02,752 p=98305 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 21:55:02,765 p=98305 u=root n=ansible | TASK [Restart nginx service in Ubuntu ansible node] ***************************************************************
+2020-08-24 21:55:04,433 p=98305 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 21:55:04,434 p=98305 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:55:04,440 p=98305 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:55:04,452 p=98305 u=root n=ansible | TASK [Deploy custom web page into nginx web server in Ubuntu ansible node] ****************************************
+2020-08-24 21:55:05,433 p=98305 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 21:55:05,433 p=98305 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 21:55:05,436 p=98305 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 21:55:05,436 p=98305 u=root n=ansible | ubuntu1                    : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 21:55:05,436 p=98305 u=root n=ansible | ubuntu2                    : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 22:27:47,711 p=99963 u=root n=ansible | ubuntu2 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2020-08-24 22:27:47,712 p=99963 u=root n=ansible | ubuntu1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2020-08-24 22:27:48,548 p=99975 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:27:48,844 p=99963 u=root n=ansible | centos1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2020-08-24 22:27:49,170 p=99977 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:27:49,410 p=99963 u=root n=ansible | centos2 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2020-08-24 22:28:25,857 p=100176 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 22:28:25,868 p=100176 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 22:28:26,483 p=100188 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:28:26,504 p=100189 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:28:27,240 p=100176 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:28:27,249 p=100176 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:28:38,771 p=100176 u=root n=ansible | ok: [centos1]
+2020-08-24 22:28:38,836 p=100176 u=root n=ansible | ok: [centos2]
+2020-08-24 22:28:38,852 p=100176 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 22:28:39,370 p=100432 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:28:39,387 p=100437 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:28:40,717 p=100176 u=root n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python-apt
+
+2020-08-24 22:28:40,718 p=100176 u=root n=ansible | fatal: [centos2]: FAILED! => {"changed": false, "cmd": "apt-get update", "msg": "[Errno 2] No such file or directory", "rc": 2}
+2020-08-24 22:28:40,734 p=100176 u=root n=ansible | fatal: [centos1]: FAILED! => {"changed": false, "cmd": "apt-get update", "msg": "[Errno 2] No such file or directory", "rc": 2}
+2020-08-24 22:28:46,003 p=100176 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:28:46,090 p=100176 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:28:46,105 p=100176 u=root n=ansible | TASK [Create the custom web root folder in Ubuntu ansible node] ***************************************************
+2020-08-24 22:28:46,745 p=100176 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:28:46,752 p=100176 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:28:46,766 p=100176 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 22:28:48,099 p=100176 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:28:48,109 p=100176 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:28:48,122 p=100176 u=root n=ansible | TASK [Restart nginx service in Ubuntu ansible node] ***************************************************************
+2020-08-24 22:28:49,958 p=100176 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 22:28:49,959 p=100176 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 22:28:49,965 p=100176 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 22:28:49,982 p=100176 u=root n=ansible | TASK [Deploy custom web page into nginx web server in Ubuntu ansible node] ****************************************
+2020-08-24 22:28:50,706 p=100176 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:28:50,752 p=100176 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:28:50,758 p=100176 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 22:28:50,759 p=100176 u=root n=ansible | centos1                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-24 22:28:50,759 p=100176 u=root n=ansible | centos2                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-24 22:28:50,759 p=100176 u=root n=ansible | ubuntu1                    : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 22:28:50,759 p=100176 u=root n=ansible | ubuntu2                    : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-24 22:35:35,762 p=101408 u=root n=ansible | ubuntu1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_apparmor": {
+            "status": "disabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "02/27/2020", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_date_time": {
+            "date": "2020-08-25", 
+            "day": "25", 
+            "epoch": "1598333735", 
+            "hour": "05", 
+            "iso8601": "2020-08-25T05:35:35Z", 
+            "iso8601_basic": "20200825T053535561440", 
+            "iso8601_basic_short": "20200825T053535", 
+            "iso8601_micro": "2020-08-25T05:35:35.561547Z", 
+            "minute": "35", 
+            "month": "08", 
+            "second": "35", 
+            "time": "05:35:35", 
+            "tz": "UTC", 
+            "tz_offset": "+0000", 
+            "weekday": "Tuesday", 
+            "weekday_number": "2", 
+            "weeknumber": "34", 
+            "year": "2020"
+        }, 
+        "ansible_device_links": {
+            "ids": {}, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {}
+        }, 
+        "ansible_devices": {
+            "sda": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "614400", 
+                        "sectorsize": 512, 
+                        "size": "300.00 MB", 
+                        "start": "2048", 
+                        "uuid": null
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "4194304", 
+                        "sectorsize": 512, 
+                        "size": "2.00 GB", 
+                        "start": "616448", 
+                        "uuid": null
+                    }, 
+                    "sda3": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "37132288", 
+                        "sectorsize": 512, 
+                        "size": "17.71 GB", 
+                        "start": "4810752", 
+                        "uuid": null
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "41943040", 
+                "sectorsize": "512", 
+                "size": "20.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,", 
+                "virtual": 1
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR00", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "125044", 
+                "sectorsize": "2048", 
+                "size": "61.06 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }, 
+            "sr1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR10", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "9109504", 
+                "sectorsize": "2048", 
+                "size": "4.34 GB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/os-release", 
+        "ansible_distribution_file_variety": "Debian", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_dns": {
+            "nameservers": [
+                "172.16.124.2"
+            ], 
+            "search": [
+                "localdomain"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 0, 
+        "ansible_effective_user_id": 0, 
+        "ansible_env": {
+            "HOME": "/root", 
+            "LANG": "C", 
+            "LC_ALL": "C", 
+            "LC_MESSAGES": "C", 
+            "LOGNAME": "root", 
+            "MAIL": "/var/mail/root", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/root", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SSH_CLIENT": "172.17.0.1 41416 22", 
+            "SSH_CONNECTION": "172.17.0.1 41416 172.17.0.2 22", 
+            "SSH_TTY": "/dev/pts/0", 
+            "TERM": "xterm-256color", 
+            "USER": "root", 
+            "_": "/bin/sh"
+        }, 
+        "ansible_fibre_channel_wwn": [], 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "ubuntu1", 
+        "ansible_hostname": "ubuntu1", 
+        "ansible_hostnqn": "", 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "3.10.0-1062.el7.x86_64", 
+        "ansible_kernel_version": "#1 SMP Wed Aug 7 18:08:02 UTC 2019", 
+        "ansible_local": {}, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.7 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "830b28446e9f6b7ac67077de5f447f95", 
+        "ansible_memfree_mb": 3165, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 5466, 
+                "used": 2336
+            }, 
+            "real": {
+                "free": 3165, 
+                "total": 7802, 
+                "used": 4637
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 2046, 
+                "total": 2047, 
+                "used": 1
+            }
+        }, 
+        "ansible_memtotal_mb": 7802, 
+        "ansible_mounts": [
+            {
+                "block_available": 2925081, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713895, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081389, 
+                "inode_total": 9283072, 
+                "inode_used": 201683, 
+                "mount": "/etc/hostname", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981131776, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2925081, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713895, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081389, 
+                "inode_total": 9283072, 
+                "inode_used": 201683, 
+                "mount": "/etc/resolv.conf", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981131776, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2925081, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713895, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081389, 
+                "inode_total": 9283072, 
+                "inode_used": 201683, 
+                "mount": "/etc/hosts", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981131776, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }
+        ], 
+        "ansible_nodename": "ubuntu1", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_processor": [
+            "0", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "1", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "2", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "3", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 4, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "VMware-56 4d de 7a 46 9e 93 1e-e6 4b ad 91 38 ce 2f 2f", 
+        "ansible_product_uuid": "7ADE4D56-9E46-1E93-E64B-AD9138CE2F2F", 
+        "ansible_product_version": "None", 
+        "ansible_python": {
+            "executable": "/usr/bin/python3", 
+            "has_sslcontext": true, 
+            "type": "cpython", 
+            "version": {
+                "major": 3, 
+                "micro": 2, 
+                "minor": 5, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                3, 
+                5, 
+                2, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "3.5.2", 
+        "ansible_real_group_id": 0, 
+        "ansible_real_user_id": 0, 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "sshd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAKupV1hag2lWbPEo6+QFkMd4F1oNDUWJ6tuMY2/vW0iRy7bpH2jhFvBX5WOPg1NkJuUEQvQnfP1D7Z/PCiwKqjZAN1lQkP6BQusXyaUwfs6miURt6rm/N6gTp4MhfJIDOPYMN3C/43mpJtBPJhUpSEaA3WeeVygihoh0CErAE9I9AAAAFQCXaqEr4LRObKbrwAHmkN0EP6AuQQAAAIEAhv3rpfFRPJW7IMMSnEuEK/4S43w6s02s8zexK+6kR/JuOlSx/pGVllK7PRBlk4BKJhHTlJO0xWccaCtaDsZklZqFptTDLBIjnnbrWiUEkk/8o7cI9rpITeFh2XjzRrxOzmIjnaiE8CzFTmG7qXQYEmP+0g+EW1jJJjQ12kMbbAUAAACAK6fKBBcSrtzvgTKYknc0hfJ5dYNpUzHo5KEBwwCfIQJCUyQdDGzJj3IiiAwADRTqmIODR7yk8zM4ZkDuxDs7fyAlaKfTpb84uo/czz54qGTDcwbgzB+GE8B6PnchAF67X5Fh/KgbTPToEtjgmBdArlBrgVGmgY1xwx9pOMG7jes=", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL+pI3iv1zHdni1qKF2niASaP/t+td1t7G+3Qqd1TaucuZGa0nWdOHopd3FBp1XMzcBPwa+OntrmDFDGAVivCDw=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIJGRW1qiAY6rawUM6MUuSQOTkDJwuMiyTtdvF/p+sb2Q", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDP7s61o/lDcJ2vLeVsGRIJzwVaCntM4HwP7Tvz0IwAZuGgvyofyYhdKRHW2tsIq+6UXfpycXWmMQ5SvQxsphwN4TLkMvOWgcwSgWuFlE/WI97X1HmXZWsAoLr4WSGPBPDWYni4Th2hfvR1q6Dr7MvnaoC6hQI2plUY5UkAFAHLqD0T/eNYLFkOrLkXYKDRd0w5euovCJzr0MXOQCGbvqmM15wNT3G7DcaI/zK1FhJmYogWsJayYYrAMMzcGLUhl6XPkrJqzJLOXs6cs5r+HM8d0M1lQtNUJqwxXHv+3oavqTEGzwVwXV2lKEefmEidXO/8NEWZUqYh0NIBolWxSBVd", 
+        "ansible_swapfree_mb": 2046, 
+        "ansible_swaptotal_mb": 2047, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            "cap_chown", 
+            "cap_dac_override", 
+            "cap_fowner", 
+            "cap_fsetid", 
+            "cap_kill", 
+            "cap_setgid", 
+            "cap_setuid", 
+            "cap_setpcap", 
+            "cap_net_bind_service", 
+            "cap_net_raw", 
+            "cap_sys_chroot", 
+            "cap_mknod", 
+            "cap_audit_write", 
+            "cap_setfcap+eip"
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 40114, 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "docker", 
+        "discovered_interpreter_python": "/usr/bin/python3", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2020-08-24 22:35:46,961 p=101496 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:35:58,343 p=101487 u=root n=ansible | centos1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.17.0.4"
+        ], 
+        "ansible_all_ipv6_addresses": [], 
+        "ansible_apparmor": {
+            "status": "disabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "02/27/2020", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_date_time": {
+            "date": "2020-08-25", 
+            "day": "25", 
+            "epoch": "1598333758", 
+            "hour": "05", 
+            "iso8601": "2020-08-25T05:35:58Z", 
+            "iso8601_basic": "20200825T053558273421", 
+            "iso8601_basic_short": "20200825T053558", 
+            "iso8601_micro": "2020-08-25T05:35:58.273502Z", 
+            "minute": "35", 
+            "month": "08", 
+            "second": "58", 
+            "time": "05:35:58", 
+            "tz": "UTC", 
+            "tz_offset": "+0000", 
+            "weekday": "Tuesday", 
+            "weekday_number": "2", 
+            "weeknumber": "34", 
+            "year": "2020"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "172.17.0.4", 
+            "alias": "eth0", 
+            "broadcast": "172.17.255.255", 
+            "gateway": "172.17.0.1", 
+            "interface": "eth0", 
+            "macaddress": "02:42:ac:11:00:04", 
+            "mtu": 1500, 
+            "netmask": "255.255.0.0", 
+            "network": "172.17.0.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_device_links": {
+            "ids": {}, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {}
+        }, 
+        "ansible_devices": {
+            "sda": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "614400", 
+                        "sectorsize": 512, 
+                        "size": "300.00 MB", 
+                        "start": "2048", 
+                        "uuid": null
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "4194304", 
+                        "sectorsize": 512, 
+                        "size": "2.00 GB", 
+                        "start": "616448", 
+                        "uuid": null
+                    }, 
+                    "sda3": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "37132288", 
+                        "sectorsize": 512, 
+                        "size": "17.71 GB", 
+                        "start": "4810752", 
+                        "uuid": null
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "41943040", 
+                "sectorsize": "512", 
+                "size": "20.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,", 
+                "virtual": 1
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR00", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "125044", 
+                "sectorsize": "2048", 
+                "size": "61.06 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }, 
+            "sr1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR10", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "9109504", 
+                "sectorsize": "2048", 
+                "size": "4.34 GB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "CentOS", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/redhat-release", 
+        "ansible_distribution_file_variety": "RedHat", 
+        "ansible_distribution_major_version": "6", 
+        "ansible_distribution_release": "Final", 
+        "ansible_distribution_version": "6.7", 
+        "ansible_dns": {
+            "nameservers": [
+                "172.16.124.2"
+            ], 
+            "search": [
+                "localdomain"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 0, 
+        "ansible_effective_user_id": 0, 
+        "ansible_env": {
+            "G_BROKEN_FILENAMES": "1", 
+            "HOME": "/root", 
+            "LANG": "C", 
+            "LC_ALL": "C", 
+            "LC_NUMERIC": "C", 
+            "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
+            "LOGNAME": "root", 
+            "MAIL": "/var/mail/root", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin", 
+            "PWD": "/root", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "2", 
+            "SSH_CLIENT": "172.17.0.1 59620 22", 
+            "SSH_CONNECTION": "172.17.0.1 59620 172.17.0.4 22", 
+            "SSH_TTY": "/dev/pts/0", 
+            "TERM": "xterm-256color", 
+            "USER": "root", 
+            "_": "/usr/bin/python"
+        }, 
+        "ansible_eth0": {
+            "active": true, 
+            "device": "eth0", 
+            "features": {
+                "busy_poll": "off [fixed]", 
+                "fcoe_mtu": "off [fixed]", 
+                "generic_receive_offload": "on", 
+                "generic_segmentation_offload": "on", 
+                "highdma": "on", 
+                "hw_tc_offload": "off [fixed]", 
+                "l2_fwd_offload": "off [fixed]", 
+                "large_receive_offload": "off [fixed]", 
+                "loopback": "off [fixed]", 
+                "netns_local": "off [fixed]", 
+                "ntuple_filters": "off [fixed]", 
+                "receive_hashing": "off [fixed]", 
+                "rx_all": "off [fixed]", 
+                "rx_checksumming": "on", 
+                "rx_fcs": "off [fixed]", 
+                "rx_gro_hw": "off [fixed]", 
+                "rx_udp_tunnel_port_offload": "off [fixed]", 
+                "rx_vlan_filter": "off [fixed]", 
+                "rx_vlan_offload": "on", 
+                "rx_vlan_stag_filter": "off [fixed]", 
+                "rx_vlan_stag_hw_parse": "on", 
+                "scatter_gather": "on", 
+                "tcp_segmentation_offload": "on", 
+                "tx_checksum_fcoe_crc": "off [fixed]", 
+                "tx_checksum_ip_generic": "on", 
+                "tx_checksum_ipv4": "off [fixed]", 
+                "tx_checksum_ipv6": "off [fixed]", 
+                "tx_checksum_sctp": "on", 
+                "tx_checksumming": "on", 
+                "tx_fcoe_segmentation": "off [fixed]", 
+                "tx_gre_csum_segmentation": "on", 
+                "tx_gre_segmentation": "on", 
+                "tx_gso_partial": "off [fixed]", 
+                "tx_gso_robust": "off [fixed]", 
+                "tx_ipip_segmentation": "on", 
+                "tx_lockless": "on [fixed]", 
+                "tx_nocache_copy": "off", 
+                "tx_scatter_gather": "on", 
+                "tx_scatter_gather_fraglist": "on", 
+                "tx_sctp_segmentation": "on", 
+                "tx_sit_segmentation": "on", 
+                "tx_tcp6_segmentation": "on", 
+                "tx_tcp_ecn_segmentation": "on", 
+                "tx_tcp_mangleid_segmentation": "on", 
+                "tx_tcp_segmentation": "on", 
+                "tx_udp_tnl_csum_segmentation": "on", 
+                "tx_udp_tnl_segmentation": "on", 
+                "tx_vlan_offload": "on", 
+                "tx_vlan_stag_hw_insert": "on", 
+                "udp_fragmentation_offload": "on", 
+                "vlan_challenged": "off [fixed]"
+            }, 
+            "hw_timestamp_filters": [], 
+            "ipv4": {
+                "address": "172.17.0.4", 
+                "broadcast": "172.17.255.255", 
+                "netmask": "255.255.0.0", 
+                "network": "172.17.0.0"
+            }, 
+            "macaddress": "02:42:ac:11:00:04", 
+            "mtu": 1500, 
+            "promisc": false, 
+            "speed": 10000, 
+            "timestamping": [
+                "rx_software", 
+                "software"
+            ], 
+            "type": "ether"
+        }, 
+        "ansible_fibre_channel_wwn": [], 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "centos1", 
+        "ansible_hostname": "centos1", 
+        "ansible_hostnqn": "", 
+        "ansible_interfaces": [
+            "lo", 
+            "eth0"
+        ], 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "3.10.0-1062.el7.x86_64", 
+        "ansible_kernel_version": "#1 SMP Wed Aug 7 18:08:02 UTC 2019", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "features": {
+                "busy_poll": "off [fixed]", 
+                "fcoe_mtu": "off [fixed]", 
+                "generic_receive_offload": "on", 
+                "generic_segmentation_offload": "on", 
+                "highdma": "on [fixed]", 
+                "hw_tc_offload": "off [fixed]", 
+                "l2_fwd_offload": "off [fixed]", 
+                "large_receive_offload": "off [fixed]", 
+                "loopback": "on [fixed]", 
+                "netns_local": "on [fixed]", 
+                "ntuple_filters": "off [fixed]", 
+                "receive_hashing": "off [fixed]", 
+                "rx_all": "off [fixed]", 
+                "rx_checksumming": "on [fixed]", 
+                "rx_fcs": "off [fixed]", 
+                "rx_gro_hw": "off [fixed]", 
+                "rx_udp_tunnel_port_offload": "off [fixed]", 
+                "rx_vlan_filter": "off [fixed]", 
+                "rx_vlan_offload": "off [fixed]", 
+                "rx_vlan_stag_filter": "off [fixed]", 
+                "rx_vlan_stag_hw_parse": "off [fixed]", 
+                "scatter_gather": "on", 
+                "tcp_segmentation_offload": "on", 
+                "tx_checksum_fcoe_crc": "off [fixed]", 
+                "tx_checksum_ip_generic": "on [fixed]", 
+                "tx_checksum_ipv4": "off [fixed]", 
+                "tx_checksum_ipv6": "off [fixed]", 
+                "tx_checksum_sctp": "on [fixed]", 
+                "tx_checksumming": "on", 
+                "tx_fcoe_segmentation": "off [fixed]", 
+                "tx_gre_csum_segmentation": "off [fixed]", 
+                "tx_gre_segmentation": "off [fixed]", 
+                "tx_gso_partial": "off [fixed]", 
+                "tx_gso_robust": "off [fixed]", 
+                "tx_ipip_segmentation": "off [fixed]", 
+                "tx_lockless": "on [fixed]", 
+                "tx_nocache_copy": "off [fixed]", 
+                "tx_scatter_gather": "on [fixed]", 
+                "tx_scatter_gather_fraglist": "on [fixed]", 
+                "tx_sctp_segmentation": "on", 
+                "tx_sit_segmentation": "off [fixed]", 
+                "tx_tcp6_segmentation": "on", 
+                "tx_tcp_ecn_segmentation": "on", 
+                "tx_tcp_mangleid_segmentation": "on", 
+                "tx_tcp_segmentation": "on", 
+                "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+                "tx_udp_tnl_segmentation": "off [fixed]", 
+                "tx_vlan_offload": "off [fixed]", 
+                "tx_vlan_stag_hw_insert": "off [fixed]", 
+                "udp_fragmentation_offload": "on", 
+                "vlan_challenged": "on [fixed]"
+            }, 
+            "hw_timestamp_filters": [], 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "broadcast": "host", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "mtu": 65536, 
+            "promisc": false, 
+            "timestamping": [
+                "rx_software", 
+                "software"
+            ], 
+            "type": "loopback"
+        }, 
+        "ansible_local": {}, 
+        "ansible_lsb": {}, 
+        "ansible_machine": "x86_64", 
+        "ansible_memfree_mb": 3160, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 5461, 
+                "used": 2341
+            }, 
+            "real": {
+                "free": 3160, 
+                "total": 7802, 
+                "used": 4642
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 2046, 
+                "total": 2047, 
+                "used": 1
+            }
+        }, 
+        "ansible_memtotal_mb": 7802, 
+        "ansible_mounts": [
+            {
+                "block_available": 2925082, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713894, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081388, 
+                "inode_total": 9283072, 
+                "inode_used": 201684, 
+                "mount": "/etc/hosts", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981135872, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2925082, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713894, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081388, 
+                "inode_total": 9283072, 
+                "inode_used": 201684, 
+                "mount": "/etc/hostname", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981135872, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2925082, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713894, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081388, 
+                "inode_total": 9283072, 
+                "inode_used": 201684, 
+                "mount": "/etc/resolv.conf", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981135872, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }
+        ], 
+        "ansible_nodename": "centos1", 
+        "ansible_os_family": "RedHat", 
+        "ansible_pkg_mgr": "yum", 
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_processor": [
+            "0", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "1", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "2", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "3", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 4, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "VMware-56 4d de 7a 46 9e 93 1e-e6 4b ad 91 38 ce 2f 2f", 
+        "ansible_product_uuid": "7ADE4D56-9E46-1E93-E64B-AD9138CE2F2F", 
+        "ansible_product_version": "None", 
+        "ansible_python": {
+            "executable": "/usr/bin/python", 
+            "has_sslcontext": false, 
+            "type": "CPython", 
+            "version": {
+                "major": 2, 
+                "micro": 6, 
+                "minor": 6, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                2, 
+                6, 
+                6, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "2.6.6", 
+        "ansible_real_group_id": 0, 
+        "ansible_real_user_id": 0, 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "sshd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAJ28CiS0e95spvhi9C4RSgFeCAzc2XU1XOEN+POQ2E+sw+bVjfcvOgY8b4oSL0ZyvRrpRsluG2lm9J4AOCId0wGPeqhayfav26JGRRywpbD+cNdb0LlYaGTrhqbVfYQtnnIJpGgbLdS2Wme6oQRB0iFbPmjGAyeu0v2KeB6JyEBrAAAAFQC924+9F4Nfid5WcuePDY5Q5VDeXwAAAIBo5UvNI+9SsnYjXOvPcXEte05RE3wR2KW30lU7Eg12CKCYM64SCuT639SYBvgxb3vSB0/vPDbQ4FpqywE4bdzRNeVDCKg67ifZSUNGk3HoIkjbNIWY388/ofkqYpdAwEE1h2VD7ZAsqd0KslrscNfiIBgGtIIuDSP20P7F9MrTbwAAAIBk6K88ibtmIfvchH06OpxOye9LWQhp3dGHKpaDkitvSDW8YO43Zs9XeeuIPJwei9ZwMRMnnRG9Tmx80YUKFmqHJCYW1u8xvRSYmYclvHKQuS6RM5vBEqp7bbL9rzoD4nfyOV0+Gk5IViA2whCgLceF/A8y3rEr1fqfuowtxNa46Q==", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAABIwAAAQEAwtOSvg93KXtn7NtRpznA9nX7Tt/6GGez48sqC39VzB3JQQgKaVrT/nrTRzjW2U9QVMy1FqG4Gsnyrf1UViWPEoeZKufaZX/KlbWqzVv5If0qFIt0TG4MWnYhUuY2a5/OPK3/tpQ1u8DAnnDFJQlE+/hEKbS0S6S5fXuCJt2EvUDLDujNd9hSXwN3BCyKXB9Y2cH21m7egLpeO4r7Pa3eX8Jy2vObwigKIHEkcAcoJAmJKP5JKzRgch5qMbvB+8miUgfqsriSAnmF7RoY/fZl9JoSs+/BONJNbbdm4dPCsxcLWDro4sHCnYN9XgZycoDra+eXC/Gi+bC03HbuttBcdQ==", 
+        "ansible_swapfree_mb": 2046, 
+        "ansible_swaptotal_mb": 2047, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            "cap_chown", 
+            "cap_dac_override", 
+            "cap_fowner", 
+            "cap_fsetid", 
+            "cap_kill", 
+            "cap_setgid", 
+            "cap_setuid", 
+            "cap_setpcap", 
+            "cap_net_bind_service", 
+            "cap_net_raw", 
+            "cap_sys_chroot", 
+            "cap_mknod", 
+            "cap_audit_write", 
+            "cap_setfcap+eip"
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 40127, 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "docker", 
+        "discovered_interpreter_python": "/usr/bin/python", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2020-08-24 22:36:36,574 p=101586 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:36:47,471 p=101577 u=root n=ansible | centos1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.17.0.4"
+        ], 
+        "ansible_all_ipv6_addresses": [], 
+        "ansible_apparmor": {
+            "status": "disabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "02/27/2020", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_date_time": {
+            "date": "2020-08-25", 
+            "day": "25", 
+            "epoch": "1598333807", 
+            "hour": "05", 
+            "iso8601": "2020-08-25T05:36:47Z", 
+            "iso8601_basic": "20200825T053647401311", 
+            "iso8601_basic_short": "20200825T053647", 
+            "iso8601_micro": "2020-08-25T05:36:47.401391Z", 
+            "minute": "36", 
+            "month": "08", 
+            "second": "47", 
+            "time": "05:36:47", 
+            "tz": "UTC", 
+            "tz_offset": "+0000", 
+            "weekday": "Tuesday", 
+            "weekday_number": "2", 
+            "weeknumber": "34", 
+            "year": "2020"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "172.17.0.4", 
+            "alias": "eth0", 
+            "broadcast": "172.17.255.255", 
+            "gateway": "172.17.0.1", 
+            "interface": "eth0", 
+            "macaddress": "02:42:ac:11:00:04", 
+            "mtu": 1500, 
+            "netmask": "255.255.0.0", 
+            "network": "172.17.0.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_device_links": {
+            "ids": {}, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {}
+        }, 
+        "ansible_devices": {
+            "sda": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "614400", 
+                        "sectorsize": 512, 
+                        "size": "300.00 MB", 
+                        "start": "2048", 
+                        "uuid": null
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "4194304", 
+                        "sectorsize": 512, 
+                        "size": "2.00 GB", 
+                        "start": "616448", 
+                        "uuid": null
+                    }, 
+                    "sda3": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "37132288", 
+                        "sectorsize": 512, 
+                        "size": "17.71 GB", 
+                        "start": "4810752", 
+                        "uuid": null
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "41943040", 
+                "sectorsize": "512", 
+                "size": "20.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,", 
+                "virtual": 1
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR00", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "125044", 
+                "sectorsize": "2048", 
+                "size": "61.06 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }, 
+            "sr1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR10", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "9109504", 
+                "sectorsize": "2048", 
+                "size": "4.34 GB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "CentOS", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/redhat-release", 
+        "ansible_distribution_file_variety": "RedHat", 
+        "ansible_distribution_major_version": "6", 
+        "ansible_distribution_release": "Final", 
+        "ansible_distribution_version": "6.7", 
+        "ansible_dns": {
+            "nameservers": [
+                "172.16.124.2"
+            ], 
+            "search": [
+                "localdomain"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 0, 
+        "ansible_effective_user_id": 0, 
+        "ansible_env": {
+            "G_BROKEN_FILENAMES": "1", 
+            "HOME": "/root", 
+            "LANG": "C", 
+            "LC_ALL": "C", 
+            "LC_NUMERIC": "C", 
+            "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
+            "LOGNAME": "root", 
+            "MAIL": "/var/mail/root", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin", 
+            "PWD": "/root", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "2", 
+            "SSH_CLIENT": "172.17.0.1 59620 22", 
+            "SSH_CONNECTION": "172.17.0.1 59620 172.17.0.4 22", 
+            "SSH_TTY": "/dev/pts/0", 
+            "TERM": "xterm-256color", 
+            "USER": "root", 
+            "_": "/usr/bin/python"
+        }, 
+        "ansible_eth0": {
+            "active": true, 
+            "device": "eth0", 
+            "features": {
+                "busy_poll": "off [fixed]", 
+                "fcoe_mtu": "off [fixed]", 
+                "generic_receive_offload": "on", 
+                "generic_segmentation_offload": "on", 
+                "highdma": "on", 
+                "hw_tc_offload": "off [fixed]", 
+                "l2_fwd_offload": "off [fixed]", 
+                "large_receive_offload": "off [fixed]", 
+                "loopback": "off [fixed]", 
+                "netns_local": "off [fixed]", 
+                "ntuple_filters": "off [fixed]", 
+                "receive_hashing": "off [fixed]", 
+                "rx_all": "off [fixed]", 
+                "rx_checksumming": "on", 
+                "rx_fcs": "off [fixed]", 
+                "rx_gro_hw": "off [fixed]", 
+                "rx_udp_tunnel_port_offload": "off [fixed]", 
+                "rx_vlan_filter": "off [fixed]", 
+                "rx_vlan_offload": "on", 
+                "rx_vlan_stag_filter": "off [fixed]", 
+                "rx_vlan_stag_hw_parse": "on", 
+                "scatter_gather": "on", 
+                "tcp_segmentation_offload": "on", 
+                "tx_checksum_fcoe_crc": "off [fixed]", 
+                "tx_checksum_ip_generic": "on", 
+                "tx_checksum_ipv4": "off [fixed]", 
+                "tx_checksum_ipv6": "off [fixed]", 
+                "tx_checksum_sctp": "on", 
+                "tx_checksumming": "on", 
+                "tx_fcoe_segmentation": "off [fixed]", 
+                "tx_gre_csum_segmentation": "on", 
+                "tx_gre_segmentation": "on", 
+                "tx_gso_partial": "off [fixed]", 
+                "tx_gso_robust": "off [fixed]", 
+                "tx_ipip_segmentation": "on", 
+                "tx_lockless": "on [fixed]", 
+                "tx_nocache_copy": "off", 
+                "tx_scatter_gather": "on", 
+                "tx_scatter_gather_fraglist": "on", 
+                "tx_sctp_segmentation": "on", 
+                "tx_sit_segmentation": "on", 
+                "tx_tcp6_segmentation": "on", 
+                "tx_tcp_ecn_segmentation": "on", 
+                "tx_tcp_mangleid_segmentation": "on", 
+                "tx_tcp_segmentation": "on", 
+                "tx_udp_tnl_csum_segmentation": "on", 
+                "tx_udp_tnl_segmentation": "on", 
+                "tx_vlan_offload": "on", 
+                "tx_vlan_stag_hw_insert": "on", 
+                "udp_fragmentation_offload": "on", 
+                "vlan_challenged": "off [fixed]"
+            }, 
+            "hw_timestamp_filters": [], 
+            "ipv4": {
+                "address": "172.17.0.4", 
+                "broadcast": "172.17.255.255", 
+                "netmask": "255.255.0.0", 
+                "network": "172.17.0.0"
+            }, 
+            "macaddress": "02:42:ac:11:00:04", 
+            "mtu": 1500, 
+            "promisc": false, 
+            "speed": 10000, 
+            "timestamping": [
+                "rx_software", 
+                "software"
+            ], 
+            "type": "ether"
+        }, 
+        "ansible_fibre_channel_wwn": [], 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "centos1", 
+        "ansible_hostname": "centos1", 
+        "ansible_hostnqn": "", 
+        "ansible_interfaces": [
+            "lo", 
+            "eth0"
+        ], 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "3.10.0-1062.el7.x86_64", 
+        "ansible_kernel_version": "#1 SMP Wed Aug 7 18:08:02 UTC 2019", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "features": {
+                "busy_poll": "off [fixed]", 
+                "fcoe_mtu": "off [fixed]", 
+                "generic_receive_offload": "on", 
+                "generic_segmentation_offload": "on", 
+                "highdma": "on [fixed]", 
+                "hw_tc_offload": "off [fixed]", 
+                "l2_fwd_offload": "off [fixed]", 
+                "large_receive_offload": "off [fixed]", 
+                "loopback": "on [fixed]", 
+                "netns_local": "on [fixed]", 
+                "ntuple_filters": "off [fixed]", 
+                "receive_hashing": "off [fixed]", 
+                "rx_all": "off [fixed]", 
+                "rx_checksumming": "on [fixed]", 
+                "rx_fcs": "off [fixed]", 
+                "rx_gro_hw": "off [fixed]", 
+                "rx_udp_tunnel_port_offload": "off [fixed]", 
+                "rx_vlan_filter": "off [fixed]", 
+                "rx_vlan_offload": "off [fixed]", 
+                "rx_vlan_stag_filter": "off [fixed]", 
+                "rx_vlan_stag_hw_parse": "off [fixed]", 
+                "scatter_gather": "on", 
+                "tcp_segmentation_offload": "on", 
+                "tx_checksum_fcoe_crc": "off [fixed]", 
+                "tx_checksum_ip_generic": "on [fixed]", 
+                "tx_checksum_ipv4": "off [fixed]", 
+                "tx_checksum_ipv6": "off [fixed]", 
+                "tx_checksum_sctp": "on [fixed]", 
+                "tx_checksumming": "on", 
+                "tx_fcoe_segmentation": "off [fixed]", 
+                "tx_gre_csum_segmentation": "off [fixed]", 
+                "tx_gre_segmentation": "off [fixed]", 
+                "tx_gso_partial": "off [fixed]", 
+                "tx_gso_robust": "off [fixed]", 
+                "tx_ipip_segmentation": "off [fixed]", 
+                "tx_lockless": "on [fixed]", 
+                "tx_nocache_copy": "off [fixed]", 
+                "tx_scatter_gather": "on [fixed]", 
+                "tx_scatter_gather_fraglist": "on [fixed]", 
+                "tx_sctp_segmentation": "on", 
+                "tx_sit_segmentation": "off [fixed]", 
+                "tx_tcp6_segmentation": "on", 
+                "tx_tcp_ecn_segmentation": "on", 
+                "tx_tcp_mangleid_segmentation": "on", 
+                "tx_tcp_segmentation": "on", 
+                "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+                "tx_udp_tnl_segmentation": "off [fixed]", 
+                "tx_vlan_offload": "off [fixed]", 
+                "tx_vlan_stag_hw_insert": "off [fixed]", 
+                "udp_fragmentation_offload": "on", 
+                "vlan_challenged": "on [fixed]"
+            }, 
+            "hw_timestamp_filters": [], 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "broadcast": "host", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "mtu": 65536, 
+            "promisc": false, 
+            "timestamping": [
+                "rx_software", 
+                "software"
+            ], 
+            "type": "loopback"
+        }, 
+        "ansible_local": {}, 
+        "ansible_lsb": {}, 
+        "ansible_machine": "x86_64", 
+        "ansible_memfree_mb": 3161, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 5465, 
+                "used": 2337
+            }, 
+            "real": {
+                "free": 3161, 
+                "total": 7802, 
+                "used": 4641
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 2046, 
+                "total": 2047, 
+                "used": 1
+            }
+        }, 
+        "ansible_memtotal_mb": 7802, 
+        "ansible_mounts": [
+            {
+                "block_available": 2925087, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713889, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081389, 
+                "inode_total": 9283072, 
+                "inode_used": 201683, 
+                "mount": "/etc/hosts", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981156352, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2925087, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713889, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081389, 
+                "inode_total": 9283072, 
+                "inode_used": 201683, 
+                "mount": "/etc/hostname", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981156352, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2925087, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713889, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081389, 
+                "inode_total": 9283072, 
+                "inode_used": 201683, 
+                "mount": "/etc/resolv.conf", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981156352, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }
+        ], 
+        "ansible_nodename": "centos1", 
+        "ansible_os_family": "RedHat", 
+        "ansible_pkg_mgr": "yum", 
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_processor": [
+            "0", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "1", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "2", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "3", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 4, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "VMware-56 4d de 7a 46 9e 93 1e-e6 4b ad 91 38 ce 2f 2f", 
+        "ansible_product_uuid": "7ADE4D56-9E46-1E93-E64B-AD9138CE2F2F", 
+        "ansible_product_version": "None", 
+        "ansible_python": {
+            "executable": "/usr/bin/python", 
+            "has_sslcontext": false, 
+            "type": "CPython", 
+            "version": {
+                "major": 2, 
+                "micro": 6, 
+                "minor": 6, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                2, 
+                6, 
+                6, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "2.6.6", 
+        "ansible_real_group_id": 0, 
+        "ansible_real_user_id": 0, 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "sshd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAJ28CiS0e95spvhi9C4RSgFeCAzc2XU1XOEN+POQ2E+sw+bVjfcvOgY8b4oSL0ZyvRrpRsluG2lm9J4AOCId0wGPeqhayfav26JGRRywpbD+cNdb0LlYaGTrhqbVfYQtnnIJpGgbLdS2Wme6oQRB0iFbPmjGAyeu0v2KeB6JyEBrAAAAFQC924+9F4Nfid5WcuePDY5Q5VDeXwAAAIBo5UvNI+9SsnYjXOvPcXEte05RE3wR2KW30lU7Eg12CKCYM64SCuT639SYBvgxb3vSB0/vPDbQ4FpqywE4bdzRNeVDCKg67ifZSUNGk3HoIkjbNIWY388/ofkqYpdAwEE1h2VD7ZAsqd0KslrscNfiIBgGtIIuDSP20P7F9MrTbwAAAIBk6K88ibtmIfvchH06OpxOye9LWQhp3dGHKpaDkitvSDW8YO43Zs9XeeuIPJwei9ZwMRMnnRG9Tmx80YUKFmqHJCYW1u8xvRSYmYclvHKQuS6RM5vBEqp7bbL9rzoD4nfyOV0+Gk5IViA2whCgLceF/A8y3rEr1fqfuowtxNa46Q==", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAABIwAAAQEAwtOSvg93KXtn7NtRpznA9nX7Tt/6GGez48sqC39VzB3JQQgKaVrT/nrTRzjW2U9QVMy1FqG4Gsnyrf1UViWPEoeZKufaZX/KlbWqzVv5If0qFIt0TG4MWnYhUuY2a5/OPK3/tpQ1u8DAnnDFJQlE+/hEKbS0S6S5fXuCJt2EvUDLDujNd9hSXwN3BCyKXB9Y2cH21m7egLpeO4r7Pa3eX8Jy2vObwigKIHEkcAcoJAmJKP5JKzRgch5qMbvB+8miUgfqsriSAnmF7RoY/fZl9JoSs+/BONJNbbdm4dPCsxcLWDro4sHCnYN9XgZycoDra+eXC/Gi+bC03HbuttBcdQ==", 
+        "ansible_swapfree_mb": 2046, 
+        "ansible_swaptotal_mb": 2047, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            "cap_chown", 
+            "cap_dac_override", 
+            "cap_fowner", 
+            "cap_fsetid", 
+            "cap_kill", 
+            "cap_setgid", 
+            "cap_setuid", 
+            "cap_setpcap", 
+            "cap_net_bind_service", 
+            "cap_net_raw", 
+            "cap_sys_chroot", 
+            "cap_mknod", 
+            "cap_audit_write", 
+            "cap_setfcap+eip"
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 40176, 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "docker", 
+        "discovered_interpreter_python": "/usr/bin/python", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2020-08-24 22:36:59,158 p=101654 u=root n=ansible | ubuntu1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_apparmor": {
+            "status": "disabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "02/27/2020", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_date_time": {
+            "date": "2020-08-25", 
+            "day": "25", 
+            "epoch": "1598333819", 
+            "hour": "05", 
+            "iso8601": "2020-08-25T05:36:59Z", 
+            "iso8601_basic": "20200825T053659079995", 
+            "iso8601_basic_short": "20200825T053659", 
+            "iso8601_micro": "2020-08-25T05:36:59.080312Z", 
+            "minute": "36", 
+            "month": "08", 
+            "second": "59", 
+            "time": "05:36:59", 
+            "tz": "UTC", 
+            "tz_offset": "+0000", 
+            "weekday": "Tuesday", 
+            "weekday_number": "2", 
+            "weeknumber": "34", 
+            "year": "2020"
+        }, 
+        "ansible_device_links": {
+            "ids": {}, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {}
+        }, 
+        "ansible_devices": {
+            "sda": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "614400", 
+                        "sectorsize": 512, 
+                        "size": "300.00 MB", 
+                        "start": "2048", 
+                        "uuid": null
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "4194304", 
+                        "sectorsize": 512, 
+                        "size": "2.00 GB", 
+                        "start": "616448", 
+                        "uuid": null
+                    }, 
+                    "sda3": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "37132288", 
+                        "sectorsize": 512, 
+                        "size": "17.71 GB", 
+                        "start": "4810752", 
+                        "uuid": null
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "41943040", 
+                "sectorsize": "512", 
+                "size": "20.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,", 
+                "virtual": 1
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR00", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "125044", 
+                "sectorsize": "2048", 
+                "size": "61.06 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }, 
+            "sr1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR10", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "9109504", 
+                "sectorsize": "2048", 
+                "size": "4.34 GB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/os-release", 
+        "ansible_distribution_file_variety": "Debian", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_dns": {
+            "nameservers": [
+                "172.16.124.2"
+            ], 
+            "search": [
+                "localdomain"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 0, 
+        "ansible_effective_user_id": 0, 
+        "ansible_env": {
+            "HOME": "/root", 
+            "LANG": "C", 
+            "LC_ALL": "C", 
+            "LC_MESSAGES": "C", 
+            "LOGNAME": "root", 
+            "MAIL": "/var/mail/root", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/root", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SSH_CLIENT": "172.17.0.1 41424 22", 
+            "SSH_CONNECTION": "172.17.0.1 41424 172.17.0.2 22", 
+            "SSH_TTY": "/dev/pts/0", 
+            "TERM": "xterm-256color", 
+            "USER": "root", 
+            "_": "/bin/sh"
+        }, 
+        "ansible_fibre_channel_wwn": [], 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "ubuntu1", 
+        "ansible_hostname": "ubuntu1", 
+        "ansible_hostnqn": "", 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "3.10.0-1062.el7.x86_64", 
+        "ansible_kernel_version": "#1 SMP Wed Aug 7 18:08:02 UTC 2019", 
+        "ansible_local": {}, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.7 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "830b28446e9f6b7ac67077de5f447f95", 
+        "ansible_memfree_mb": 3157, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 5460, 
+                "used": 2342
+            }, 
+            "real": {
+                "free": 3157, 
+                "total": 7802, 
+                "used": 4645
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 2046, 
+                "total": 2047, 
+                "used": 1
+            }
+        }, 
+        "ansible_memtotal_mb": 7802, 
+        "ansible_mounts": [
+            {
+                "block_available": 2925053, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713923, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081388, 
+                "inode_total": 9283072, 
+                "inode_used": 201684, 
+                "mount": "/etc/hostname", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981017088, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2925053, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713923, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081388, 
+                "inode_total": 9283072, 
+                "inode_used": 201684, 
+                "mount": "/etc/hosts", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981017088, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2925053, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1713923, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9081388, 
+                "inode_total": 9283072, 
+                "inode_used": 201684, 
+                "mount": "/etc/resolv.conf", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11981017088, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }
+        ], 
+        "ansible_nodename": "ubuntu1", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_processor": [
+            "0", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "1", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "2", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "3", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 4, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "VMware-56 4d de 7a 46 9e 93 1e-e6 4b ad 91 38 ce 2f 2f", 
+        "ansible_product_uuid": "7ADE4D56-9E46-1E93-E64B-AD9138CE2F2F", 
+        "ansible_product_version": "None", 
+        "ansible_python": {
+            "executable": "/usr/bin/python3", 
+            "has_sslcontext": true, 
+            "type": "cpython", 
+            "version": {
+                "major": 3, 
+                "micro": 2, 
+                "minor": 5, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                3, 
+                5, 
+                2, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "3.5.2", 
+        "ansible_real_group_id": 0, 
+        "ansible_real_user_id": 0, 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "sshd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAKupV1hag2lWbPEo6+QFkMd4F1oNDUWJ6tuMY2/vW0iRy7bpH2jhFvBX5WOPg1NkJuUEQvQnfP1D7Z/PCiwKqjZAN1lQkP6BQusXyaUwfs6miURt6rm/N6gTp4MhfJIDOPYMN3C/43mpJtBPJhUpSEaA3WeeVygihoh0CErAE9I9AAAAFQCXaqEr4LRObKbrwAHmkN0EP6AuQQAAAIEAhv3rpfFRPJW7IMMSnEuEK/4S43w6s02s8zexK+6kR/JuOlSx/pGVllK7PRBlk4BKJhHTlJO0xWccaCtaDsZklZqFptTDLBIjnnbrWiUEkk/8o7cI9rpITeFh2XjzRrxOzmIjnaiE8CzFTmG7qXQYEmP+0g+EW1jJJjQ12kMbbAUAAACAK6fKBBcSrtzvgTKYknc0hfJ5dYNpUzHo5KEBwwCfIQJCUyQdDGzJj3IiiAwADRTqmIODR7yk8zM4ZkDuxDs7fyAlaKfTpb84uo/czz54qGTDcwbgzB+GE8B6PnchAF67X5Fh/KgbTPToEtjgmBdArlBrgVGmgY1xwx9pOMG7jes=", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL+pI3iv1zHdni1qKF2niASaP/t+td1t7G+3Qqd1TaucuZGa0nWdOHopd3FBp1XMzcBPwa+OntrmDFDGAVivCDw=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIJGRW1qiAY6rawUM6MUuSQOTkDJwuMiyTtdvF/p+sb2Q", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDP7s61o/lDcJ2vLeVsGRIJzwVaCntM4HwP7Tvz0IwAZuGgvyofyYhdKRHW2tsIq+6UXfpycXWmMQ5SvQxsphwN4TLkMvOWgcwSgWuFlE/WI97X1HmXZWsAoLr4WSGPBPDWYni4Th2hfvR1q6Dr7MvnaoC6hQI2plUY5UkAFAHLqD0T/eNYLFkOrLkXYKDRd0w5euovCJzr0MXOQCGbvqmM15wNT3G7DcaI/zK1FhJmYogWsJayYYrAMMzcGLUhl6XPkrJqzJLOXs6cs5r+HM8d0M1lQtNUJqwxXHv+3oavqTEGzwVwXV2lKEefmEidXO/8NEWZUqYh0NIBolWxSBVd", 
+        "ansible_swapfree_mb": 2046, 
+        "ansible_swaptotal_mb": 2047, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            "cap_chown", 
+            "cap_dac_override", 
+            "cap_fowner", 
+            "cap_fsetid", 
+            "cap_kill", 
+            "cap_setgid", 
+            "cap_setuid", 
+            "cap_setpcap", 
+            "cap_net_bind_service", 
+            "cap_net_raw", 
+            "cap_sys_chroot", 
+            "cap_mknod", 
+            "cap_audit_write", 
+            "cap_setfcap+eip"
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 40197, 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "docker", 
+        "discovered_interpreter_python": "/usr/bin/python3", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2020-08-24 22:44:41,238 p=101850 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 22:44:41,248 p=101850 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 22:44:41,988 p=101865 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:44:41,991 p=101862 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:44:42,734 p=101850 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:44:42,755 p=101850 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:44:54,221 p=101850 u=root n=ansible | ok: [centos1]
+2020-08-24 22:44:54,599 p=101850 u=root n=ansible | ok: [centos2]
+2020-08-24 22:44:54,608 p=101850 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 22:44:54,705 p=101850 u=root n=ansible | skipping: [centos1]
+2020-08-24 22:44:54,737 p=101850 u=root n=ansible | skipping: [centos2]
+2020-08-24 22:45:01,429 p=101850 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:45:01,874 p=101850 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:45:01,910 p=101850 u=root n=ansible | TASK [Install Extra Packages for Enterprise Linux (EPEL) in CentOS ansible node] **********************************
+2020-08-24 22:45:02,031 p=101850 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 22:45:02,053 p=101850 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 22:45:02,652 p=102582 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:45:02,656 p=102580 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:45:26,622 p=101850 u=root n=ansible | changed: [centos1]
+2020-08-24 22:45:28,594 p=101850 u=root n=ansible | changed: [centos2]
+2020-08-24 22:45:28,605 p=101850 u=root n=ansible | TASK [Install nginx in the CentOS ansible node] *******************************************************************
+2020-08-24 22:45:28,695 p=101850 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 22:45:28,715 p=101850 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 22:45:28,897 p=102703 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:45:28,975 p=102705 u=root n=ansible | [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1 to see detailed information
+
+2020-08-24 22:45:31,401 p=101850 u=root n=ansible | fatal: [centos2]: FAILED! => {"changed": false, "msg": "Error: Cannot retrieve metalink for repository: epel. Please verify its path and try again\n", "rc": 1, "results": []}
+2020-08-24 22:45:31,835 p=101850 u=root n=ansible | fatal: [centos1]: FAILED! => {"changed": false, "msg": "Error: Cannot retrieve metalink for repository: epel. Please verify its path and try again\n", "rc": 1, "results": []}
+2020-08-24 22:45:31,845 p=101850 u=root n=ansible | TASK [Create the custom web root folder in ansible node] **********************************************************
+2020-08-24 22:45:32,478 p=101850 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:45:32,488 p=101850 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:45:32,498 p=101850 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 22:45:33,295 p=101850 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:45:33,295 p=101850 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:45:33,306 p=101850 u=root n=ansible | TASK [Restart nginx service in Ubuntu ansible node] ***************************************************************
+2020-08-24 22:45:34,905 p=101850 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 22:45:34,906 p=101850 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 22:45:34,910 p=101850 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 22:45:34,922 p=101850 u=root n=ansible | TASK [Deploy custom web page into nginx web server in Ubuntu ansible node] ****************************************
+2020-08-24 22:45:35,736 p=101850 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:45:35,746 p=101850 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:45:35,750 p=101850 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 22:45:35,750 p=101850 u=root n=ansible | centos1                    : ok=2    changed=1    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2020-08-24 22:45:35,750 p=101850 u=root n=ansible | centos2                    : ok=2    changed=1    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2020-08-24 22:45:35,751 p=101850 u=root n=ansible | ubuntu1                    : ok=6    changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-08-24 22:45:35,751 p=101850 u=root n=ansible | ubuntu2                    : ok=6    changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-08-24 22:48:09,939 p=103171 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 22:48:09,951 p=103171 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 22:48:11,435 p=103171 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:48:11,472 p=103171 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:48:22,775 p=103171 u=root n=ansible | ok: [centos1]
+2020-08-24 22:48:22,964 p=103171 u=root n=ansible | ok: [centos2]
+2020-08-24 22:48:22,975 p=103171 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 22:48:23,108 p=103171 u=root n=ansible | skipping: [centos1]
+2020-08-24 22:48:23,151 p=103171 u=root n=ansible | skipping: [centos2]
+2020-08-24 22:48:30,040 p=103171 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:48:30,168 p=103171 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:48:30,180 p=103171 u=root n=ansible | TASK [Install Extra Packages for Enterprise Linux (EPEL) in CentOS ansible node] **********************************
+2020-08-24 22:48:30,281 p=103171 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 22:48:30,287 p=103171 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 22:48:32,373 p=103171 u=root n=ansible | fatal: [centos2]: FAILED! => {"changed": false, "msg": "Error: Cannot retrieve metalink for repository: epel. Please verify its path and try again\n", "rc": 1, "results": []}
+2020-08-24 22:48:32,783 p=103171 u=root n=ansible | fatal: [centos1]: FAILED! => {"changed": false, "msg": "Error: Cannot retrieve metalink for repository: epel. Please verify its path and try again\n", "rc": 1, "results": []}
+2020-08-24 22:48:32,796 p=103171 u=root n=ansible | TASK [Install nginx in the CentOS ansible node] *******************************************************************
+2020-08-24 22:48:32,876 p=103171 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 22:48:32,895 p=103171 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 22:48:32,913 p=103171 u=root n=ansible | TASK [Create the custom web root folder in ansible node] **********************************************************
+2020-08-24 22:48:33,753 p=103171 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:48:33,758 p=103171 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:48:33,772 p=103171 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 22:48:34,767 p=103171 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:48:34,768 p=103171 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:48:34,784 p=103171 u=root n=ansible | TASK [Restart nginx service in Ubuntu ansible node] ***************************************************************
+2020-08-24 22:48:36,468 p=103171 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 22:48:36,468 p=103171 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 22:48:36,469 p=103171 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 22:48:36,486 p=103171 u=root n=ansible | TASK [Deploy custom web page into nginx web server in Ubuntu ansible node] ****************************************
+2020-08-24 22:48:37,542 p=103171 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:48:37,567 p=103171 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:48:37,571 p=103171 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 22:48:37,572 p=103171 u=root n=ansible | centos1                    : ok=1    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2020-08-24 22:48:37,572 p=103171 u=root n=ansible | centos2                    : ok=1    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2020-08-24 22:48:37,572 p=103171 u=root n=ansible | ubuntu1                    : ok=6    changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-08-24 22:48:37,573 p=103171 u=root n=ansible | ubuntu2                    : ok=6    changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-08-24 22:57:08,207 p=104453 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 22:57:08,217 p=104453 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 22:57:09,636 p=104453 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:57:09,667 p=104453 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:57:20,954 p=104453 u=root n=ansible | ok: [centos2]
+2020-08-24 22:57:20,967 p=104453 u=root n=ansible | ok: [centos1]
+2020-08-24 22:57:20,978 p=104453 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 22:57:21,105 p=104453 u=root n=ansible | skipping: [centos1]
+2020-08-24 22:57:21,137 p=104453 u=root n=ansible | skipping: [centos2]
+2020-08-24 22:57:27,857 p=104453 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:57:27,929 p=104453 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:57:27,943 p=104453 u=root n=ansible | TASK [Fix the metalink issue in CentOS ansible node] **************************************************************
+2020-08-24 22:57:28,038 p=104453 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 22:57:28,048 p=104453 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 22:57:30,682 p=104453 u=root n=ansible | changed: [centos1]
+2020-08-24 22:57:30,710 p=104453 u=root n=ansible | changed: [centos2]
+2020-08-24 22:57:30,726 p=104453 u=root n=ansible | TASK [Install Extra Packages for Enterprise Linux (EPEL) in CentOS ansible node] **********************************
+2020-08-24 22:57:30,835 p=104453 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 22:57:30,855 p=104453 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 22:57:46,346 p=104453 u=root n=ansible | ok: [centos2]
+2020-08-24 22:57:49,216 p=104453 u=root n=ansible | ok: [centos1]
+2020-08-24 22:57:49,226 p=104453 u=root n=ansible | TASK [Install nginx in the CentOS ansible node] *******************************************************************
+2020-08-24 22:57:49,309 p=104453 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 22:57:49,333 p=104453 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 22:58:49,233 p=104453 u=root n=ansible | changed: [centos1]
+2020-08-24 22:58:50,449 p=104453 u=root n=ansible | changed: [centos2]
+2020-08-24 22:58:50,460 p=104453 u=root n=ansible | TASK [Create the custom web root folder in ansible node] **********************************************************
+2020-08-24 22:58:51,152 p=104453 u=root n=ansible | changed: [centos2]
+2020-08-24 22:58:51,158 p=104453 u=root n=ansible | changed: [centos1]
+2020-08-24 22:58:51,244 p=104453 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:58:51,252 p=104453 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:58:51,269 p=104453 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 22:58:52,115 p=104453 u=root n=ansible | fatal: [centos1]: FAILED! => {"changed": false, "checksum": "fb8cf5c3ad26e6354b0c1820b315cf61405039c0", "msg": "Destination directory /etc/nginx/sites-available does not exist"}
+2020-08-24 22:58:52,124 p=104453 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:58:52,133 p=104453 u=root n=ansible | fatal: [centos2]: FAILED! => {"changed": false, "checksum": "fb8cf5c3ad26e6354b0c1820b315cf61405039c0", "msg": "Destination directory /etc/nginx/sites-available does not exist"}
+2020-08-24 22:58:52,212 p=104453 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:58:52,224 p=104453 u=root n=ansible | TASK [Restart nginx service in Ubuntu ansible node] ***************************************************************
+2020-08-24 22:58:53,940 p=104453 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 22:58:53,941 p=104453 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 22:58:53,946 p=104453 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 22:58:53,958 p=104453 u=root n=ansible | TASK [Deploy custom web page into nginx web server in Ubuntu ansible node] ****************************************
+2020-08-24 22:58:54,732 p=104453 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 22:58:54,748 p=104453 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 22:58:54,751 p=104453 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 22:58:54,751 p=104453 u=root n=ansible | centos1                    : ok=5    changed=3    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2020-08-24 22:58:54,751 p=104453 u=root n=ansible | centos2                    : ok=5    changed=3    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2020-08-24 22:58:54,752 p=104453 u=root n=ansible | ubuntu1                    : ok=6    changed=1    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2020-08-24 22:58:54,752 p=104453 u=root n=ansible | ubuntu2                    : ok=6    changed=1    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2020-08-24 23:04:52,383 p=106429 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 23:04:52,393 p=106429 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 23:04:53,821 p=106429 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:04:53,824 p=106429 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:05:05,103 p=106429 u=root n=ansible | ok: [centos2]
+2020-08-24 23:05:05,296 p=106429 u=root n=ansible | ok: [centos1]
+2020-08-24 23:05:05,307 p=106429 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 23:05:05,442 p=106429 u=root n=ansible | skipping: [centos1]
+2020-08-24 23:05:05,473 p=106429 u=root n=ansible | skipping: [centos2]
+2020-08-24 23:05:11,405 p=106429 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:05:11,848 p=106429 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:05:11,860 p=106429 u=root n=ansible | TASK [Fix the metalink issue in CentOS ansible node] **************************************************************
+2020-08-24 23:05:11,954 p=106429 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:05:11,975 p=106429 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:05:12,928 p=106429 u=root n=ansible | ok: [centos1]
+2020-08-24 23:05:12,929 p=106429 u=root n=ansible | ok: [centos2]
+2020-08-24 23:05:12,940 p=106429 u=root n=ansible | TASK [Install Extra Packages for Enterprise Linux (EPEL) in CentOS ansible node] **********************************
+2020-08-24 23:05:13,019 p=106429 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:05:13,042 p=106429 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:05:26,059 p=106429 u=root n=ansible | ok: [centos1]
+2020-08-24 23:05:26,878 p=106429 u=root n=ansible | ok: [centos2]
+2020-08-24 23:05:26,888 p=106429 u=root n=ansible | TASK [Install nginx in the CentOS ansible node] *******************************************************************
+2020-08-24 23:05:26,975 p=106429 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:05:26,978 p=106429 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:05:36,602 p=106429 u=root n=ansible | ok: [centos1]
+2020-08-24 23:05:39,827 p=106429 u=root n=ansible | ok: [centos2]
+2020-08-24 23:05:39,838 p=106429 u=root n=ansible | TASK [Create the custom web root folder in ansible node] **********************************************************
+2020-08-24 23:05:40,319 p=106429 u=root n=ansible | ok: [centos1]
+2020-08-24 23:05:40,334 p=106429 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:05:40,347 p=106429 u=root n=ansible | ok: [centos2]
+2020-08-24 23:05:40,359 p=106429 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:05:40,371 p=106429 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 23:05:40,509 p=106429 u=root n=ansible | skipping: [centos1]
+2020-08-24 23:05:40,552 p=106429 u=root n=ansible | skipping: [centos2]
+2020-08-24 23:05:41,481 p=106429 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:05:41,495 p=106429 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:05:41,508 p=106429 u=root n=ansible | TASK [Configure nginx for custom web root folder in CentOS ansible node] ******************************************
+2020-08-24 23:05:41,597 p=106429 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:05:41,622 p=106429 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:05:45,217 p=106429 u=root n=ansible | changed: [centos2]
+2020-08-24 23:05:45,222 p=106429 u=root n=ansible | changed: [centos1]
+2020-08-24 23:05:45,237 p=106429 u=root n=ansible | TASK [Restart nginx service in ansible node] **********************************************************************
+2020-08-24 23:05:46,776 p=106429 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 23:05:46,777 p=106429 u=root n=ansible | changed: [centos1]
+2020-08-24 23:05:46,777 p=106429 u=root n=ansible | changed: [centos2]
+2020-08-24 23:05:47,057 p=106429 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 23:05:47,059 p=106429 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 23:05:47,072 p=106429 u=root n=ansible | TASK [Deploy custom web page into nginx web server in ansible node] ***********************************************
+2020-08-24 23:05:48,089 p=106429 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:05:48,110 p=106429 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:05:49,692 p=106429 u=root n=ansible | changed: [centos1]
+2020-08-24 23:05:49,723 p=106429 u=root n=ansible | changed: [centos2]
+2020-08-24 23:05:49,726 p=106429 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 23:05:49,726 p=106429 u=root n=ansible | centos1                    : ok=8    changed=3    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-08-24 23:05:49,726 p=106429 u=root n=ansible | centos2                    : ok=8    changed=3    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-08-24 23:05:49,727 p=106429 u=root n=ansible | ubuntu1                    : ok=6    changed=1    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2020-08-24 23:05:49,727 p=106429 u=root n=ansible | ubuntu2                    : ok=6    changed=1    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2020-08-24 23:08:48,933 p=108304 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: ubuntu
+
+2020-08-24 23:08:48,933 p=108304 u=root n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2020-08-24 23:09:00,579 p=108313 u=root n=ansible | ubuntu1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_apparmor": {
+            "status": "disabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "02/27/2020", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_date_time": {
+            "date": "2020-08-25", 
+            "day": "25", 
+            "epoch": "1598335740", 
+            "hour": "06", 
+            "iso8601": "2020-08-25T06:09:00Z", 
+            "iso8601_basic": "20200825T060900488295", 
+            "iso8601_basic_short": "20200825T060900", 
+            "iso8601_micro": "2020-08-25T06:09:00.488425Z", 
+            "minute": "09", 
+            "month": "08", 
+            "second": "00", 
+            "time": "06:09:00", 
+            "tz": "UTC", 
+            "tz_offset": "+0000", 
+            "weekday": "Tuesday", 
+            "weekday_number": "2", 
+            "weeknumber": "34", 
+            "year": "2020"
+        }, 
+        "ansible_device_links": {
+            "ids": {}, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {}
+        }, 
+        "ansible_devices": {
+            "sda": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "614400", 
+                        "sectorsize": 512, 
+                        "size": "300.00 MB", 
+                        "start": "2048", 
+                        "uuid": null
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "4194304", 
+                        "sectorsize": 512, 
+                        "size": "2.00 GB", 
+                        "start": "616448", 
+                        "uuid": null
+                    }, 
+                    "sda3": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "37132288", 
+                        "sectorsize": 512, 
+                        "size": "17.71 GB", 
+                        "start": "4810752", 
+                        "uuid": null
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "41943040", 
+                "sectorsize": "512", 
+                "size": "20.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,", 
+                "virtual": 1
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR00", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "125044", 
+                "sectorsize": "2048", 
+                "size": "61.06 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }, 
+            "sr1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR10", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "9109504", 
+                "sectorsize": "2048", 
+                "size": "4.34 GB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/os-release", 
+        "ansible_distribution_file_variety": "Debian", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_dns": {
+            "nameservers": [
+                "172.16.124.2"
+            ], 
+            "search": [
+                "localdomain"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 0, 
+        "ansible_effective_user_id": 0, 
+        "ansible_env": {
+            "HOME": "/root", 
+            "LANG": "C", 
+            "LC_ALL": "C", 
+            "LC_MESSAGES": "C", 
+            "LOGNAME": "root", 
+            "MAIL": "/var/mail/root", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/root", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SSH_CLIENT": "172.17.0.1 42558 22", 
+            "SSH_CONNECTION": "172.17.0.1 42558 172.17.0.2 22", 
+            "SSH_TTY": "/dev/pts/0", 
+            "TERM": "xterm-256color", 
+            "USER": "root", 
+            "_": "/bin/sh"
+        }, 
+        "ansible_fibre_channel_wwn": [], 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "ubuntu1", 
+        "ansible_hostname": "ubuntu1", 
+        "ansible_hostnqn": "", 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "3.10.0-1062.el7.x86_64", 
+        "ansible_kernel_version": "#1 SMP Wed Aug 7 18:08:02 UTC 2019", 
+        "ansible_local": {}, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.7 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "830b28446e9f6b7ac67077de5f447f95", 
+        "ansible_memfree_mb": 2600, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 5371, 
+                "used": 2431
+            }, 
+            "real": {
+                "free": 2600, 
+                "total": 7802, 
+                "used": 5202
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 2046, 
+                "total": 2047, 
+                "used": 1
+            }
+        }, 
+        "ansible_memtotal_mb": 7802, 
+        "ansible_mounts": [
+            {
+                "block_available": 2806129, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1832847, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9076187, 
+                "inode_total": 9283072, 
+                "inode_used": 206885, 
+                "mount": "/etc/hosts", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11493904384, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2806129, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1832847, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9076187, 
+                "inode_total": 9283072, 
+                "inode_used": 206885, 
+                "mount": "/etc/hostname", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11493904384, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2806129, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1832847, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9076187, 
+                "inode_total": 9283072, 
+                "inode_used": 206885, 
+                "mount": "/etc/resolv.conf", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11493904384, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }
+        ], 
+        "ansible_nodename": "ubuntu1", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_processor": [
+            "0", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "1", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "2", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "3", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 4, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "VMware-56 4d de 7a 46 9e 93 1e-e6 4b ad 91 38 ce 2f 2f", 
+        "ansible_product_uuid": "7ADE4D56-9E46-1E93-E64B-AD9138CE2F2F", 
+        "ansible_product_version": "None", 
+        "ansible_python": {
+            "executable": "/usr/bin/python3", 
+            "has_sslcontext": true, 
+            "type": "cpython", 
+            "version": {
+                "major": 3, 
+                "micro": 2, 
+                "minor": 5, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                3, 
+                5, 
+                2, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "3.5.2", 
+        "ansible_real_group_id": 0, 
+        "ansible_real_user_id": 0, 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "sshd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAKupV1hag2lWbPEo6+QFkMd4F1oNDUWJ6tuMY2/vW0iRy7bpH2jhFvBX5WOPg1NkJuUEQvQnfP1D7Z/PCiwKqjZAN1lQkP6BQusXyaUwfs6miURt6rm/N6gTp4MhfJIDOPYMN3C/43mpJtBPJhUpSEaA3WeeVygihoh0CErAE9I9AAAAFQCXaqEr4LRObKbrwAHmkN0EP6AuQQAAAIEAhv3rpfFRPJW7IMMSnEuEK/4S43w6s02s8zexK+6kR/JuOlSx/pGVllK7PRBlk4BKJhHTlJO0xWccaCtaDsZklZqFptTDLBIjnnbrWiUEkk/8o7cI9rpITeFh2XjzRrxOzmIjnaiE8CzFTmG7qXQYEmP+0g+EW1jJJjQ12kMbbAUAAACAK6fKBBcSrtzvgTKYknc0hfJ5dYNpUzHo5KEBwwCfIQJCUyQdDGzJj3IiiAwADRTqmIODR7yk8zM4ZkDuxDs7fyAlaKfTpb84uo/czz54qGTDcwbgzB+GE8B6PnchAF67X5Fh/KgbTPToEtjgmBdArlBrgVGmgY1xwx9pOMG7jes=", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL+pI3iv1zHdni1qKF2niASaP/t+td1t7G+3Qqd1TaucuZGa0nWdOHopd3FBp1XMzcBPwa+OntrmDFDGAVivCDw=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIJGRW1qiAY6rawUM6MUuSQOTkDJwuMiyTtdvF/p+sb2Q", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDP7s61o/lDcJ2vLeVsGRIJzwVaCntM4HwP7Tvz0IwAZuGgvyofyYhdKRHW2tsIq+6UXfpycXWmMQ5SvQxsphwN4TLkMvOWgcwSgWuFlE/WI97X1HmXZWsAoLr4WSGPBPDWYni4Th2hfvR1q6Dr7MvnaoC6hQI2plUY5UkAFAHLqD0T/eNYLFkOrLkXYKDRd0w5euovCJzr0MXOQCGbvqmM15wNT3G7DcaI/zK1FhJmYogWsJayYYrAMMzcGLUhl6XPkrJqzJLOXs6cs5r+HM8d0M1lQtNUJqwxXHv+3oavqTEGzwVwXV2lKEefmEidXO/8NEWZUqYh0NIBolWxSBVd", 
+        "ansible_swapfree_mb": 2046, 
+        "ansible_swaptotal_mb": 2047, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            "cap_chown", 
+            "cap_dac_override", 
+            "cap_fowner", 
+            "cap_fsetid", 
+            "cap_kill", 
+            "cap_setgid", 
+            "cap_setuid", 
+            "cap_setpcap", 
+            "cap_net_bind_service", 
+            "cap_net_raw", 
+            "cap_sys_chroot", 
+            "cap_mknod", 
+            "cap_audit_write", 
+            "cap_setfcap+eip"
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 42119, 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "docker", 
+        "discovered_interpreter_python": "/usr/bin/python3", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2020-08-24 23:09:21,093 p=108391 u=root n=ansible | ubuntu1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_apparmor": {
+            "status": "disabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "02/27/2020", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_date_time": {
+            "date": "2020-08-25", 
+            "day": "25", 
+            "epoch": "1598335761", 
+            "hour": "06", 
+            "iso8601": "2020-08-25T06:09:21Z", 
+            "iso8601_basic": "20200825T060921017706", 
+            "iso8601_basic_short": "20200825T060921", 
+            "iso8601_micro": "2020-08-25T06:09:21.017826Z", 
+            "minute": "09", 
+            "month": "08", 
+            "second": "21", 
+            "time": "06:09:21", 
+            "tz": "UTC", 
+            "tz_offset": "+0000", 
+            "weekday": "Tuesday", 
+            "weekday_number": "2", 
+            "weeknumber": "34", 
+            "year": "2020"
+        }, 
+        "ansible_device_links": {
+            "ids": {}, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {}
+        }, 
+        "ansible_devices": {
+            "sda": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "614400", 
+                        "sectorsize": 512, 
+                        "size": "300.00 MB", 
+                        "start": "2048", 
+                        "uuid": null
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "4194304", 
+                        "sectorsize": 512, 
+                        "size": "2.00 GB", 
+                        "start": "616448", 
+                        "uuid": null
+                    }, 
+                    "sda3": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "37132288", 
+                        "sectorsize": 512, 
+                        "size": "17.71 GB", 
+                        "start": "4810752", 
+                        "uuid": null
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "41943040", 
+                "sectorsize": "512", 
+                "size": "20.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,", 
+                "virtual": 1
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR00", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "125044", 
+                "sectorsize": "2048", 
+                "size": "61.06 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }, 
+            "sr1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR10", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "9109504", 
+                "sectorsize": "2048", 
+                "size": "4.34 GB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/os-release", 
+        "ansible_distribution_file_variety": "Debian", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_dns": {
+            "nameservers": [
+                "172.16.124.2"
+            ], 
+            "search": [
+                "localdomain"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 0, 
+        "ansible_effective_user_id": 0, 
+        "ansible_env": {
+            "HOME": "/root", 
+            "LANG": "C", 
+            "LC_ALL": "C", 
+            "LC_MESSAGES": "C", 
+            "LOGNAME": "root", 
+            "MAIL": "/var/mail/root", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/root", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SSH_CLIENT": "172.17.0.1 42558 22", 
+            "SSH_CONNECTION": "172.17.0.1 42558 172.17.0.2 22", 
+            "SSH_TTY": "/dev/pts/0", 
+            "TERM": "xterm-256color", 
+            "USER": "root", 
+            "_": "/bin/sh"
+        }, 
+        "ansible_fibre_channel_wwn": [], 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "ubuntu1", 
+        "ansible_hostname": "ubuntu1", 
+        "ansible_hostnqn": "", 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "3.10.0-1062.el7.x86_64", 
+        "ansible_kernel_version": "#1 SMP Wed Aug 7 18:08:02 UTC 2019", 
+        "ansible_local": {}, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.7 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "830b28446e9f6b7ac67077de5f447f95", 
+        "ansible_memfree_mb": 2600, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 5371, 
+                "used": 2431
+            }, 
+            "real": {
+                "free": 2600, 
+                "total": 7802, 
+                "used": 5202
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 2046, 
+                "total": 2047, 
+                "used": 1
+            }
+        }, 
+        "ansible_memtotal_mb": 7802, 
+        "ansible_mounts": [
+            {
+                "block_available": 2806142, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1832834, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9076187, 
+                "inode_total": 9283072, 
+                "inode_used": 206885, 
+                "mount": "/etc/hostname", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11493957632, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2806142, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1832834, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9076187, 
+                "inode_total": 9283072, 
+                "inode_used": 206885, 
+                "mount": "/etc/resolv.conf", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11493957632, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2806142, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1832834, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9076187, 
+                "inode_total": 9283072, 
+                "inode_used": 206885, 
+                "mount": "/etc/hosts", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11493957632, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }
+        ], 
+        "ansible_nodename": "ubuntu1", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_processor": [
+            "0", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "1", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "2", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "3", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 4, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "VMware-56 4d de 7a 46 9e 93 1e-e6 4b ad 91 38 ce 2f 2f", 
+        "ansible_product_uuid": "7ADE4D56-9E46-1E93-E64B-AD9138CE2F2F", 
+        "ansible_product_version": "None", 
+        "ansible_python": {
+            "executable": "/usr/bin/python3", 
+            "has_sslcontext": true, 
+            "type": "cpython", 
+            "version": {
+                "major": 3, 
+                "micro": 2, 
+                "minor": 5, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                3, 
+                5, 
+                2, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "3.5.2", 
+        "ansible_real_group_id": 0, 
+        "ansible_real_user_id": 0, 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "sshd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAKupV1hag2lWbPEo6+QFkMd4F1oNDUWJ6tuMY2/vW0iRy7bpH2jhFvBX5WOPg1NkJuUEQvQnfP1D7Z/PCiwKqjZAN1lQkP6BQusXyaUwfs6miURt6rm/N6gTp4MhfJIDOPYMN3C/43mpJtBPJhUpSEaA3WeeVygihoh0CErAE9I9AAAAFQCXaqEr4LRObKbrwAHmkN0EP6AuQQAAAIEAhv3rpfFRPJW7IMMSnEuEK/4S43w6s02s8zexK+6kR/JuOlSx/pGVllK7PRBlk4BKJhHTlJO0xWccaCtaDsZklZqFptTDLBIjnnbrWiUEkk/8o7cI9rpITeFh2XjzRrxOzmIjnaiE8CzFTmG7qXQYEmP+0g+EW1jJJjQ12kMbbAUAAACAK6fKBBcSrtzvgTKYknc0hfJ5dYNpUzHo5KEBwwCfIQJCUyQdDGzJj3IiiAwADRTqmIODR7yk8zM4ZkDuxDs7fyAlaKfTpb84uo/czz54qGTDcwbgzB+GE8B6PnchAF67X5Fh/KgbTPToEtjgmBdArlBrgVGmgY1xwx9pOMG7jes=", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL+pI3iv1zHdni1qKF2niASaP/t+td1t7G+3Qqd1TaucuZGa0nWdOHopd3FBp1XMzcBPwa+OntrmDFDGAVivCDw=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIJGRW1qiAY6rawUM6MUuSQOTkDJwuMiyTtdvF/p+sb2Q", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDP7s61o/lDcJ2vLeVsGRIJzwVaCntM4HwP7Tvz0IwAZuGgvyofyYhdKRHW2tsIq+6UXfpycXWmMQ5SvQxsphwN4TLkMvOWgcwSgWuFlE/WI97X1HmXZWsAoLr4WSGPBPDWYni4Th2hfvR1q6Dr7MvnaoC6hQI2plUY5UkAFAHLqD0T/eNYLFkOrLkXYKDRd0w5euovCJzr0MXOQCGbvqmM15wNT3G7DcaI/zK1FhJmYogWsJayYYrAMMzcGLUhl6XPkrJqzJLOXs6cs5r+HM8d0M1lQtNUJqwxXHv+3oavqTEGzwVwXV2lKEefmEidXO/8NEWZUqYh0NIBolWxSBVd", 
+        "ansible_swapfree_mb": 2046, 
+        "ansible_swaptotal_mb": 2047, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            "cap_chown", 
+            "cap_dac_override", 
+            "cap_fowner", 
+            "cap_fsetid", 
+            "cap_kill", 
+            "cap_setgid", 
+            "cap_setuid", 
+            "cap_setpcap", 
+            "cap_net_bind_service", 
+            "cap_net_raw", 
+            "cap_sys_chroot", 
+            "cap_mknod", 
+            "cap_audit_write", 
+            "cap_setfcap+eip"
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 42139, 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "docker", 
+        "discovered_interpreter_python": "/usr/bin/python3", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2020-08-24 23:09:41,664 p=108461 u=root n=ansible | ubuntu1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_apparmor": {
+            "status": "disabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "02/27/2020", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_date_time": {
+            "date": "2020-08-25", 
+            "day": "25", 
+            "epoch": "1598335781", 
+            "hour": "06", 
+            "iso8601": "2020-08-25T06:09:41Z", 
+            "iso8601_basic": "20200825T060941587093", 
+            "iso8601_basic_short": "20200825T060941", 
+            "iso8601_micro": "2020-08-25T06:09:41.587666Z", 
+            "minute": "09", 
+            "month": "08", 
+            "second": "41", 
+            "time": "06:09:41", 
+            "tz": "UTC", 
+            "tz_offset": "+0000", 
+            "weekday": "Tuesday", 
+            "weekday_number": "2", 
+            "weeknumber": "34", 
+            "year": "2020"
+        }, 
+        "ansible_device_links": {
+            "ids": {}, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {}
+        }, 
+        "ansible_devices": {
+            "sda": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "614400", 
+                        "sectorsize": 512, 
+                        "size": "300.00 MB", 
+                        "start": "2048", 
+                        "uuid": null
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "4194304", 
+                        "sectorsize": 512, 
+                        "size": "2.00 GB", 
+                        "start": "616448", 
+                        "uuid": null
+                    }, 
+                    "sda3": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "37132288", 
+                        "sectorsize": 512, 
+                        "size": "17.71 GB", 
+                        "start": "4810752", 
+                        "uuid": null
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "41943040", 
+                "sectorsize": "512", 
+                "size": "20.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,", 
+                "virtual": 1
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR00", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "125044", 
+                "sectorsize": "2048", 
+                "size": "61.06 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }, 
+            "sr1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware IDE CDR10", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "9109504", 
+                "sectorsize": "2048", 
+                "size": "4.34 GB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/os-release", 
+        "ansible_distribution_file_variety": "Debian", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_dns": {
+            "nameservers": [
+                "172.16.124.2"
+            ], 
+            "search": [
+                "localdomain"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 0, 
+        "ansible_effective_user_id": 0, 
+        "ansible_env": {
+            "HOME": "/root", 
+            "LANG": "C", 
+            "LC_ALL": "C", 
+            "LC_MESSAGES": "C", 
+            "LOGNAME": "root", 
+            "MAIL": "/var/mail/root", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/root", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SSH_CLIENT": "172.17.0.1 42558 22", 
+            "SSH_CONNECTION": "172.17.0.1 42558 172.17.0.2 22", 
+            "SSH_TTY": "/dev/pts/0", 
+            "TERM": "xterm-256color", 
+            "USER": "root", 
+            "_": "/bin/sh"
+        }, 
+        "ansible_fibre_channel_wwn": [], 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "ubuntu1", 
+        "ansible_hostname": "ubuntu1", 
+        "ansible_hostnqn": "", 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "3.10.0-1062.el7.x86_64", 
+        "ansible_kernel_version": "#1 SMP Wed Aug 7 18:08:02 UTC 2019", 
+        "ansible_local": {}, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.7 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "830b28446e9f6b7ac67077de5f447f95", 
+        "ansible_memfree_mb": 2601, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 5372, 
+                "used": 2430
+            }, 
+            "real": {
+                "free": 2601, 
+                "total": 7802, 
+                "used": 5201
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 2046, 
+                "total": 2047, 
+                "used": 1
+            }
+        }, 
+        "ansible_memtotal_mb": 7802, 
+        "ansible_mounts": [
+            {
+                "block_available": 2806120, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1832856, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9076187, 
+                "inode_total": 9283072, 
+                "inode_used": 206885, 
+                "mount": "/etc/hostname", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11493867520, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2806120, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1832856, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9076187, 
+                "inode_total": 9283072, 
+                "inode_used": 206885, 
+                "mount": "/etc/resolv.conf", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11493867520, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }, 
+            {
+                "block_available": 2806120, 
+                "block_size": 4096, 
+                "block_total": 4638976, 
+                "block_used": 1832856, 
+                "device": "/dev/sda3", 
+                "fstype": "xfs", 
+                "inode_available": 9076187, 
+                "inode_total": 9283072, 
+                "inode_used": 206885, 
+                "mount": "/etc/hosts", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota,bind", 
+                "size_available": 11493867520, 
+                "size_total": 19001245696, 
+                "uuid": "N/A"
+            }
+        ], 
+        "ansible_nodename": "ubuntu1", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-1062.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "UUID=1dbf7878-de14-4cf0-8c16-af2264481070", 
+            "spectre_v2": "retpoline"
+        }, 
+        "ansible_processor": [
+            "0", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "1", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "2", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "3", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 4, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "VMware-56 4d de 7a 46 9e 93 1e-e6 4b ad 91 38 ce 2f 2f", 
+        "ansible_product_uuid": "7ADE4D56-9E46-1E93-E64B-AD9138CE2F2F", 
+        "ansible_product_version": "None", 
+        "ansible_python": {
+            "executable": "/usr/bin/python3", 
+            "has_sslcontext": true, 
+            "type": "cpython", 
+            "version": {
+                "major": 3, 
+                "micro": 2, 
+                "minor": 5, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                3, 
+                5, 
+                2, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "3.5.2", 
+        "ansible_real_group_id": 0, 
+        "ansible_real_user_id": 0, 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "sshd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAKupV1hag2lWbPEo6+QFkMd4F1oNDUWJ6tuMY2/vW0iRy7bpH2jhFvBX5WOPg1NkJuUEQvQnfP1D7Z/PCiwKqjZAN1lQkP6BQusXyaUwfs6miURt6rm/N6gTp4MhfJIDOPYMN3C/43mpJtBPJhUpSEaA3WeeVygihoh0CErAE9I9AAAAFQCXaqEr4LRObKbrwAHmkN0EP6AuQQAAAIEAhv3rpfFRPJW7IMMSnEuEK/4S43w6s02s8zexK+6kR/JuOlSx/pGVllK7PRBlk4BKJhHTlJO0xWccaCtaDsZklZqFptTDLBIjnnbrWiUEkk/8o7cI9rpITeFh2XjzRrxOzmIjnaiE8CzFTmG7qXQYEmP+0g+EW1jJJjQ12kMbbAUAAACAK6fKBBcSrtzvgTKYknc0hfJ5dYNpUzHo5KEBwwCfIQJCUyQdDGzJj3IiiAwADRTqmIODR7yk8zM4ZkDuxDs7fyAlaKfTpb84uo/czz54qGTDcwbgzB+GE8B6PnchAF67X5Fh/KgbTPToEtjgmBdArlBrgVGmgY1xwx9pOMG7jes=", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL+pI3iv1zHdni1qKF2niASaP/t+td1t7G+3Qqd1TaucuZGa0nWdOHopd3FBp1XMzcBPwa+OntrmDFDGAVivCDw=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIJGRW1qiAY6rawUM6MUuSQOTkDJwuMiyTtdvF/p+sb2Q", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDP7s61o/lDcJ2vLeVsGRIJzwVaCntM4HwP7Tvz0IwAZuGgvyofyYhdKRHW2tsIq+6UXfpycXWmMQ5SvQxsphwN4TLkMvOWgcwSgWuFlE/WI97X1HmXZWsAoLr4WSGPBPDWYni4Th2hfvR1q6Dr7MvnaoC6hQI2plUY5UkAFAHLqD0T/eNYLFkOrLkXYKDRd0w5euovCJzr0MXOQCGbvqmM15wNT3G7DcaI/zK1FhJmYogWsJayYYrAMMzcGLUhl6XPkrJqzJLOXs6cs5r+HM8d0M1lQtNUJqwxXHv+3oavqTEGzwVwXV2lKEefmEidXO/8NEWZUqYh0NIBolWxSBVd", 
+        "ansible_swapfree_mb": 2046, 
+        "ansible_swaptotal_mb": 2047, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            "cap_chown", 
+            "cap_dac_override", 
+            "cap_fowner", 
+            "cap_fsetid", 
+            "cap_kill", 
+            "cap_setgid", 
+            "cap_setuid", 
+            "cap_setpcap", 
+            "cap_net_bind_service", 
+            "cap_net_raw", 
+            "cap_sys_chroot", 
+            "cap_mknod", 
+            "cap_audit_write", 
+            "cap_setfcap+eip"
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 42160, 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "docker", 
+        "discovered_interpreter_python": "/usr/bin/python3", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2020-08-24 23:10:22,151 p=108553 u=root n=ansible | ubuntu1 | CHANGED | rc=0 >>
+172.17.0.2
+
+2020-08-24 23:12:51,490 p=108652 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 23:12:51,502 p=108652 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 23:12:52,941 p=108652 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:12:52,947 p=108652 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:13:04,191 p=108652 u=root n=ansible | ok: [centos2]
+2020-08-24 23:13:04,325 p=108652 u=root n=ansible | ok: [centos1]
+2020-08-24 23:13:04,336 p=108652 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 23:13:04,475 p=108652 u=root n=ansible | skipping: [centos1]
+2020-08-24 23:13:04,521 p=108652 u=root n=ansible | skipping: [centos2]
+2020-08-24 23:13:11,008 p=108652 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:13:11,034 p=108652 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:13:11,049 p=108652 u=root n=ansible | TASK [Fix the metalink issue in CentOS ansible node] **************************************************************
+2020-08-24 23:13:11,143 p=108652 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:13:11,155 p=108652 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:13:12,128 p=108652 u=root n=ansible | ok: [centos2]
+2020-08-24 23:13:12,130 p=108652 u=root n=ansible | ok: [centos1]
+2020-08-24 23:13:12,142 p=108652 u=root n=ansible | TASK [Install Extra Packages for Enterprise Linux (EPEL) in CentOS ansible node] **********************************
+2020-08-24 23:13:12,237 p=108652 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:13:12,270 p=108652 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:13:24,793 p=108652 u=root n=ansible | ok: [centos1]
+2020-08-24 23:13:28,027 p=108652 u=root n=ansible | ok: [centos2]
+2020-08-24 23:13:28,041 p=108652 u=root n=ansible | TASK [Install nginx in the CentOS ansible node] *******************************************************************
+2020-08-24 23:13:28,115 p=108652 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:13:28,134 p=108652 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:13:41,658 p=108652 u=root n=ansible | ok: [centos1]
+2020-08-24 23:13:45,728 p=108652 u=root n=ansible | ok: [centos2]
+2020-08-24 23:13:45,739 p=108652 u=root n=ansible | TASK [Create the custom web root folder in ansible node] **********************************************************
+2020-08-24 23:13:46,237 p=108652 u=root n=ansible | ok: [centos1]
+2020-08-24 23:13:46,259 p=108652 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:13:46,263 p=108652 u=root n=ansible | ok: [centos2]
+2020-08-24 23:13:46,270 p=108652 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:13:46,283 p=108652 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 23:13:46,415 p=108652 u=root n=ansible | skipping: [centos1]
+2020-08-24 23:13:46,433 p=108652 u=root n=ansible | skipping: [centos2]
+2020-08-24 23:13:47,066 p=108652 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:13:47,094 p=108652 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:13:47,105 p=108652 u=root n=ansible | TASK [Configure nginx for custom web root folder in CentOS ansible node] ******************************************
+2020-08-24 23:13:47,191 p=108652 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:13:47,211 p=108652 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:13:47,782 p=108652 u=root n=ansible | ok: [centos1]
+2020-08-24 23:13:47,814 p=108652 u=root n=ansible | ok: [centos2]
+2020-08-24 23:13:47,830 p=108652 u=root n=ansible | TASK [Restart nginx service in ansible node] **********************************************************************
+2020-08-24 23:13:49,400 p=108652 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 23:13:49,400 p=108652 u=root n=ansible | changed: [centos2]
+2020-08-24 23:13:49,401 p=108652 u=root n=ansible | changed: [centos1]
+2020-08-24 23:13:49,593 p=108652 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 23:13:49,599 p=108652 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 23:13:49,619 p=108652 u=root n=ansible | TASK [Extract IP address of ansible node] *************************************************************************
+2020-08-24 23:13:50,105 p=108652 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 23:13:50,113 p=108652 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 23:13:50,890 p=108652 u=root n=ansible | changed: [centos1]
+2020-08-24 23:13:50,929 p=108652 u=root n=ansible | changed: [centos2]
+2020-08-24 23:13:50,942 p=108652 u=root n=ansible | TASK [debug] ******************************************************************************************************
+2020-08-24 23:13:51,037 p=108652 u=root n=ansible | ok: [ubuntu1] => {
+    "output": {
+        "changed": true, 
+        "cmd": "hostname -i", 
+        "delta": "0:00:00.004027", 
+        "end": "2020-08-25 06:13:50.047186", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2020-08-25 06:13:50.043159", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "172.17.0.2", 
+        "stdout_lines": [
+            "172.17.0.2"
+        ]
+    }
+}
+2020-08-24 23:13:51,060 p=108652 u=root n=ansible | ok: [ubuntu2] => {
+    "output": {
+        "changed": true, 
+        "cmd": "hostname -i", 
+        "delta": "0:00:00.005843", 
+        "end": "2020-08-25 06:13:50.047570", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2020-08-25 06:13:50.041727", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "172.17.0.3", 
+        "stdout_lines": [
+            "172.17.0.3"
+        ]
+    }
+}
+2020-08-24 23:13:51,086 p=108652 u=root n=ansible | ok: [centos1] => {
+    "output": {
+        "changed": true, 
+        "cmd": "hostname -i", 
+        "delta": "0:00:00.813765", 
+        "end": "2020-08-25 06:13:50.850053", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2020-08-25 06:13:50.036288", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "172.17.0.4", 
+        "stdout_lines": [
+            "172.17.0.4"
+        ]
+    }
+}
+2020-08-24 23:13:51,115 p=108652 u=root n=ansible | ok: [centos2] => {
+    "output": {
+        "changed": true, 
+        "cmd": "hostname -i", 
+        "delta": "0:00:00.827467", 
+        "end": "2020-08-25 06:13:50.883107", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2020-08-25 06:13:50.055640", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "172.17.0.5", 
+        "stdout_lines": [
+            "172.17.0.5"
+        ]
+    }
+}
+2020-08-24 23:13:51,134 p=108652 u=root n=ansible | TASK [Deploy custom web page into nginx web server in ansible node] ***********************************************
+2020-08-24 23:13:52,297 p=108652 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 23:13:52,308 p=108652 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 23:13:54,103 p=108652 u=root n=ansible | changed: [centos2]
+2020-08-24 23:13:54,124 p=108652 u=root n=ansible | changed: [centos1]
+2020-08-24 23:13:54,127 p=108652 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 23:13:54,128 p=108652 u=root n=ansible | centos1                    : ok=10   changed=3    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-08-24 23:13:54,128 p=108652 u=root n=ansible | centos2                    : ok=10   changed=3    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-08-24 23:13:54,129 p=108652 u=root n=ansible | ubuntu1                    : ok=8    changed=3    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2020-08-24 23:13:54,129 p=108652 u=root n=ansible | ubuntu2                    : ok=8    changed=3    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2020-08-24 23:15:13,685 p=110636 u=root n=ansible | PLAY [This play will install nginx web server, configure web root folder and deploy custom web page] **************
+2020-08-24 23:15:13,697 p=110636 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************
+2020-08-24 23:15:15,100 p=110636 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:15:15,102 p=110636 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:15:26,431 p=110636 u=root n=ansible | ok: [centos2]
+2020-08-24 23:15:26,644 p=110636 u=root n=ansible | ok: [centos1]
+2020-08-24 23:15:26,654 p=110636 u=root n=ansible | TASK [Install nginx in the Ubuntu ansible node] *******************************************************************
+2020-08-24 23:15:26,762 p=110636 u=root n=ansible | skipping: [centos1]
+2020-08-24 23:15:26,794 p=110636 u=root n=ansible | skipping: [centos2]
+2020-08-24 23:15:33,516 p=110636 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:15:33,843 p=110636 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:15:33,855 p=110636 u=root n=ansible | TASK [Fix the metalink issue in CentOS ansible node] **************************************************************
+2020-08-24 23:15:33,928 p=110636 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:15:33,950 p=110636 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:15:34,932 p=110636 u=root n=ansible | ok: [centos1]
+2020-08-24 23:15:34,933 p=110636 u=root n=ansible | ok: [centos2]
+2020-08-24 23:15:34,945 p=110636 u=root n=ansible | TASK [Install Extra Packages for Enterprise Linux (EPEL) in CentOS ansible node] **********************************
+2020-08-24 23:15:35,039 p=110636 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:15:35,058 p=110636 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:15:49,102 p=110636 u=root n=ansible | ok: [centos1]
+2020-08-24 23:15:49,729 p=110636 u=root n=ansible | ok: [centos2]
+2020-08-24 23:15:49,741 p=110636 u=root n=ansible | TASK [Install nginx in the CentOS ansible node] *******************************************************************
+2020-08-24 23:15:49,833 p=110636 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:15:49,847 p=110636 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:15:58,266 p=110636 u=root n=ansible | ok: [centos1]
+2020-08-24 23:16:06,717 p=110636 u=root n=ansible | ok: [centos2]
+2020-08-24 23:16:06,727 p=110636 u=root n=ansible | TASK [Create the custom web root folder in ansible node] **********************************************************
+2020-08-24 23:16:07,185 p=110636 u=root n=ansible | ok: [centos1]
+2020-08-24 23:16:07,199 p=110636 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:16:07,231 p=110636 u=root n=ansible | ok: [centos2]
+2020-08-24 23:16:07,245 p=110636 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:16:07,267 p=110636 u=root n=ansible | TASK [Configure nginx for custom web root folder in Ubuntu ansible node] ******************************************
+2020-08-24 23:16:07,424 p=110636 u=root n=ansible | skipping: [centos1]
+2020-08-24 23:16:07,445 p=110636 u=root n=ansible | skipping: [centos2]
+2020-08-24 23:16:08,127 p=110636 u=root n=ansible | ok: [ubuntu1]
+2020-08-24 23:16:08,129 p=110636 u=root n=ansible | ok: [ubuntu2]
+2020-08-24 23:16:08,140 p=110636 u=root n=ansible | TASK [Configure nginx for custom web root folder in CentOS ansible node] ******************************************
+2020-08-24 23:16:08,223 p=110636 u=root n=ansible | skipping: [ubuntu1]
+2020-08-24 23:16:08,249 p=110636 u=root n=ansible | skipping: [ubuntu2]
+2020-08-24 23:16:08,838 p=110636 u=root n=ansible | ok: [centos1]
+2020-08-24 23:16:08,846 p=110636 u=root n=ansible | ok: [centos2]
+2020-08-24 23:16:08,857 p=110636 u=root n=ansible | TASK [Restart nginx service in ansible node] **********************************************************************
+2020-08-24 23:16:10,438 p=110636 u=root n=ansible | [WARNING]: Consider using the service module rather than running 'service'.  If you need to use command because
+service is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2020-08-24 23:16:10,438 p=110636 u=root n=ansible | changed: [centos2]
+2020-08-24 23:16:10,450 p=110636 u=root n=ansible | changed: [centos1]
+2020-08-24 23:16:10,616 p=110636 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 23:16:10,618 p=110636 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 23:16:10,630 p=110636 u=root n=ansible | TASK [Extract IP address of ansible node] *************************************************************************
+2020-08-24 23:16:11,162 p=110636 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 23:16:11,216 p=110636 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 23:16:11,958 p=110636 u=root n=ansible | changed: [centos1]
+2020-08-24 23:16:11,990 p=110636 u=root n=ansible | changed: [centos2]
+2020-08-24 23:16:12,005 p=110636 u=root n=ansible | TASK [debug] ******************************************************************************************************
+2020-08-24 23:16:12,092 p=110636 u=root n=ansible | ok: [ubuntu1] => {
+    "output": {
+        "changed": true, 
+        "cmd": "hostname -i", 
+        "delta": "0:00:00.007958", 
+        "end": "2020-08-25 06:16:11.098376", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2020-08-25 06:16:11.090418", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "172.17.0.2", 
+        "stdout_lines": [
+            "172.17.0.2"
+        ]
+    }
+}
+2020-08-24 23:16:12,117 p=110636 u=root n=ansible | ok: [ubuntu2] => {
+    "output": {
+        "changed": true, 
+        "cmd": "hostname -i", 
+        "delta": "0:00:00.005681", 
+        "end": "2020-08-25 06:16:11.144744", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2020-08-25 06:16:11.139063", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "172.17.0.3", 
+        "stdout_lines": [
+            "172.17.0.3"
+        ]
+    }
+}
+2020-08-24 23:16:12,132 p=110636 u=root n=ansible | ok: [centos1] => {
+    "output": {
+        "changed": true, 
+        "cmd": "hostname -i", 
+        "delta": "0:00:00.822323", 
+        "end": "2020-08-25 06:16:11.912331", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2020-08-25 06:16:11.090008", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "172.17.0.4", 
+        "stdout_lines": [
+            "172.17.0.4"
+        ]
+    }
+}
+2020-08-24 23:16:12,169 p=110636 u=root n=ansible | ok: [centos2] => {
+    "output": {
+        "changed": true, 
+        "cmd": "hostname -i", 
+        "delta": "0:00:00.820488", 
+        "end": "2020-08-25 06:16:11.949157", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2020-08-25 06:16:11.128669", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "172.17.0.5", 
+        "stdout_lines": [
+            "172.17.0.5"
+        ]
+    }
+}
+2020-08-24 23:16:12,182 p=110636 u=root n=ansible | TASK [Deploy custom web page into nginx web server in ansible node] ***********************************************
+2020-08-24 23:16:13,380 p=110636 u=root n=ansible | changed: [ubuntu1]
+2020-08-24 23:16:13,405 p=110636 u=root n=ansible | changed: [ubuntu2]
+2020-08-24 23:16:14,900 p=110636 u=root n=ansible | changed: [centos1]
+2020-08-24 23:16:14,915 p=110636 u=root n=ansible | changed: [centos2]
+2020-08-24 23:16:14,919 p=110636 u=root n=ansible | PLAY RECAP ********************************************************************************************************
+2020-08-24 23:16:14,919 p=110636 u=root n=ansible | centos1                    : ok=10   changed=3    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-08-24 23:16:14,919 p=110636 u=root n=ansible | centos2                    : ok=10   changed=3    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-08-24 23:16:14,919 p=110636 u=root n=ansible | ubuntu1                    : ok=8    changed=3    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2020-08-24 23:16:14,920 p=110636 u=root n=ansible | ubuntu2                    : ok=8    changed=3    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
