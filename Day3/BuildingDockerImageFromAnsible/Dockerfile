@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL author="Jeganathan Swaminathan <jegan@tektutor.org>""
+LABEL author="Jeganathan Swaminathan <jegan@tektutor.org>"
 
 RUN apt update && apt install -y openssh-server python3 sudo
 

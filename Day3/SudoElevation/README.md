@@ -20,6 +20,7 @@ docker rm -f $(docker ps -aq)
 ### You may create a container out of the newly baked docker image
 
 docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ansible-ubuntu-new
+
 docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ansible-ubuntu-new
 
 ### You may now execute install-nginx playbook 
