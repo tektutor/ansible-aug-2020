@@ -9,11 +9,31 @@
         name: "tektutor/ansible-ubuntu"
         state: absent 
 
+    - name: Delete the existing centos ansible image
+      docker_image:
+        docker_host: tcp://localhost:4243
+        name: "tektutor/ansible-centos"
+        state: absent 
+
     - name: Build ubuntu ansible image
       docker_image:
           docker_host: tcp://localhost:4243
           name: "tektutor/ansible-ubuntu"
           source: build
+          build: 
+            path: .
+            pull: no
+            rm: true
+          force_source: true
+          force_tag: true
+          state: present 
+
+    - name: Build centos ansible image
+      docker_image:
+          docker_host: tcp://localhost:4243
+          name: "tektutor/ansible-centos"
+          source: build
+          dockerfile: CentOSDockerfile
           build: 
             path: .
             pull: no

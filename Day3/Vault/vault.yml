@@ -1,0 +1,7 @@
+- name: This playbook will demonstrate on how to access a vault protected data
+  hosts: localhost
+  vars_files:
+     - credentials.yml
+  tasks:
+    - debug: msg="{{item.key}} ==> {{ item.value }}"
+      with_dict: "{{credentials}}"

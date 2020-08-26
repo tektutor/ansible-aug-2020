@@ -1,0 +1,21 @@
+FROM centos:7.7.1908
+LABEL author="Jeganathan Swaminathan <jegan@tektutor.org>"
+
+RUN yum install -y epel-release openssh-server python3 sudo
+
+RUN useradd -m -p devops -s /bin/bash devops
+RUN echo "devops:devops" | chpasswd 
+
+COPY sudoers /etc/sudoers
+COPY authorized_keys /home/devops/.ssh/authorized_keys
+COPY sshd_config /etc/ssh/sshd_config
+
+RUN mkdir -p /var/run/sshd
+
+#RUN systemctl enable sshd && systemctl start sshd && systemctl stop sshd
+RUN /usr/bin/ssh-keygen -A
+
+EXPOSE 22
+EXPOSE 80
+
+CMD ["/usr/sbin/sshd", "-D"]

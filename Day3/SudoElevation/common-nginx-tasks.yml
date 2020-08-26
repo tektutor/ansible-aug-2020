@@ -1,9 +1,6 @@
 - name: Create the custom web root folder in ansible node
   file: path=/var/html state=directory mode=0777
 
-- name: Restart nginx service in ansible node
-  shell: service nginx restart
-
 - name: Extract IP address of ansible node
   shell: hostname -i
   register: output
