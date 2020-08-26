@@ -1,0 +1,11 @@
+- name: Fix the metalink issue in CentOS ansible node
+  copy: src=epel.repo dest=/etc/yum.repos.d/epel.repo
+
+- name: Install Extra Packages for Enterprise Linux (EPEL) in CentOS ansible node
+  yum: 
+    name: epel-release 
+    state: latest
+
+- name: Install nginx in the CentOS ansible node
+  yum: name=nginx state=latest 
+

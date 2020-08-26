@@ -1,0 +1,26 @@
+- name: This play will install nginx web server, configure web root folder and deploy custom web page
+  hosts: all
+  #become: yes
+  vars_files:
+   - nginx_variables.yml
+  tasks:
+   - include: "install-nginx-{{ansible_distribution|lower}}.yml"
+   - include: "configure-nginx-{{ansible_distribution|lower}}.yml"
+   - include: common-nginx-tasks.yml
+
+- name: Test if the nginx web are able to server our custom html pages
+  hosts: localhost
+  tasks:
+    - name: Access web page on ubuntu ansible nodes
+      shell: "curl http://localhost:8{{item}}"
+      with_sequence: start=1  end=2 format="%03d"
+      register: output
+
+    - debug: var=output.results.stdout_lines
+
+#    - name: Access web page on centos ansible nodes
+#      shell: "curl http://localhost:9{{item}}"
+#      with_sequence: start=1  end=2 format="%03d"
+#      register: output
+
+#    - debug: var=output

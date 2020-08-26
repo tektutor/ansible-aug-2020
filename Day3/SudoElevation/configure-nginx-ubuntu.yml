@@ -1,0 +1,3 @@
+- name: Configure nginx for custom web root folder in Ubuntu ansible node
+  when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
+  copy: src=default dest=/etc/nginx/sites-available/default backup=yes 
