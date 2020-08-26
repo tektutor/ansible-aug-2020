@@ -17,6 +17,7 @@ ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
 ### To apply the changes, you need restart docker service
 
 sudo systemctl daemon-reload
+
 sudo systemctl restart docker
 
 ### Just to double check, ensure the docker service still works after your configuration 
