@@ -1,0 +1,4 @@
+- name: Configure tomcat in CentOS
+  copy: src=httpd.conf dest=/etc/httpd/conf/httpd.conf
+  notify:
+     - Restart tomcat on CentOS

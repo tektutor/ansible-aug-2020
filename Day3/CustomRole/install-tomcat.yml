@@ -1,0 +1,5 @@
+- name: This playbook will demonstrate on how to invoke your custom ansible tomcat role
+  hosts: all
+  become: yes
+  roles:
+    - tomcat
