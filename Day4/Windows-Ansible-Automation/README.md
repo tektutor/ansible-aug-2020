@@ -19,19 +19,20 @@ $PSVersionTable
 ### Configuring WinRM on Windows machine
 
 $url = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"
+
 $file = "$env:temp\ConfigureRemotingForAnsible.ps1"
 
 (New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file)
 
 powershell.exe -ExecutionPolicy ByPass -File $file
 
-Configuring Windows node with Basic authentication
+### Configuring Windows node with Basic authentication
+
 Set-Item -Path WSMan:\localhost\Service\Auth\Basic -Value $true
 
 ### Verify if WinRM Listeners are running ( 2 listerners one for Http and other for Https expected )
 
 winrm enumerate winrm/config/Listener
-
 
 ### On the Ansible Controller machine, make sure pywinrm is installed
 
